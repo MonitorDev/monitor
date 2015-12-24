@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<lastSyncTime>0</lastSyncTime>
+	<encoding>UTF-8</encoding>
+	<ftp>
+		<upload>
+			<host>192.168.20.126</host>
+			<port>21</port>
+			<username>yuliangmei</username>
+			<password>yuliangmei</password>
+		    <localDirectory>ftp\upload</localDirectory>
+		    <remoteDirectory>upload</remoteDirectory>
+		</upload>
+		<download>
+			<host>192.168.20.126</host>
+			<port>21</port>
+			<username>yuliangmei</username>
+			<password>yuliangmei</password>
+		    <localDirectory>ftp\upload</localDirectory>
+		    <remoteDirectory>upload</remoteDirectory>
+		</download>
+	</ftp>
+</config>

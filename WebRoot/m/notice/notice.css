@@ -1,0 +1,10 @@
+.notice_point {BACKGROUND: url(img/point.png) no-repeat;width:3px;height:3px;overflow:hidden;}
+
+.notice_close {BACKGROUND: url(img/page.png) no-repeat;BACKGROUND-POSITION: 0px 0px;width:48px;height:48px;overflow:hidden;}
+.notice_close.z-hv {BACKGROUND-POSITION: -50px 0px;}
+
+.notice_prev {BACKGROUND: url(img/page.png) no-repeat;BACKGROUND-POSITION: 0px -120px;width:48px;height:48px;overflow:hidden;}
+.notice_prev.z-hv {BACKGROUND-POSITION: -50px -120px;}
+
+.notice_next {BACKGROUND: url(img/page.png) no-repeat;BACKGROUND-POSITION: 0px -60px;width:48px;height:48px;overflow:hidden;}
+.notice_next.z-hv {BACKGROUND-POSITION: -50px -60px;}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+<!-- controller -->
+	<bean name="/portalIndex.sp" class="com.rongji.websiteMonitor.webapp.system.controller.PortalIndexController">
+		<property name="methodNameResolver" ref="paramResolver" />
+	</bean>
+	<bean name="/monitor.sp" class="com.rongji.websiteMonitor.webapp.system.controller.MonitorController">
+		<property name="methodNameResolver" ref="paramResolver" />
+	</bean>
+	<bean name="/index.sp"
+		class="com.rongji.websiteMonitor.webapp.system.controller.IndexController">
+		<property name="methodNameResolver" ref="paramResolver" />
+	</bean>
+	<bean name="/login.sp"
+		class="com.rongji.websiteMonitor.webapp.system.controller.LoginController">
+		<property name="methodNameResolver" ref="paramResolver" />
+	</bean>
+	<bean name="/MonitorPointMgr.sp"
+		class="com.rongji.websiteMonitor.webapp.monitorPoint.controller.MonitorPointController">
+		<property name="pointService" ref="pointService"></property>
+		<property name="monitortype" ref="typeService"></property>
+		<property name="methodNameResolver" ref="paramResolver" />
+	</bean>
+	
+	<bean name="/MonitorTypeMgr.sp"
+		class="com.rongji.websiteMonitor.webapp.monitorType.controller.MonitorTypeController">
+		<property name="typeService" ref="typeService"></property>
+		<property name="methodNameResolver" ref="paramResolver" />
+	</bean>
+	
+	
+	<bean name="/test.sp"
+		class="test.controller.TestController">
+		<property name="methodNameResolver" ref="paramResolver" />
+	
+	</bean>
+	
+	<bean name="/monitorDetailMgr.sp"
+		class="com.rongji.websiteMonitor.webapp.visit.controller.MonitorDetailController">
+		<property name="projectService" ref="projectService"></property>
+		<property name="subprojectService" ref="subprojectService"></property>
+		<property name="typeService" ref="typeService"></property>
+		<property name="detialService" ref="detialService"></property>
+		<property name="methodNameResolver" ref="paramResolver" />
+	</bean>
+	
+	
+	<bean name="/remotingMonitor.sp"
+		class="com.rongji.websiteMonitor.webapp.romote.controller.RemotingMonitorController">
+		<property name="detialService" ref="detialService"></property>
+		<property name="taskService" ref="taskService"></property>
+		<property name="methodNameResolver" ref="paramResolver" />
+	</bean>
+	
+	<bean name="/testUpdate.sp"
+		class="com.rongji.websiteMonitor.webapp.task.controller.TestController">
+		<property name="methodNameResolver" ref="paramResolver" />
+	</bean>
+	
+	<bean name="/clientMonitor.sp"
+		class="com.rongji.websiteMonitor.webapp.visit.controller.ClientMonitorController">
+		<property name="typeService" ref="typeService"></property>
+		<property name="detialService" ref="detialService"></property>
+		<property name="snmpService" ref="snmpService"></property>
+		<property name="projectService" ref="projectService"></property>
+		<property name="subprojectService" ref="subprojectService"></property>
+		<property name="thresholdService" ref="thresholdService"></property>
+		<property name="methodNameResolver" ref="paramResolver" />
+	</bean>
+	
+		<bean name="/project.sp"
+		class="com.rongji.websiteMonitor.webapp.project.controller.ProjectController">
+		<property name="projectService" ref="projectService"></property>
+		<property name="methodNameResolver" ref="paramResolver" />
+	</bean>
+	
+	<bean name="/subproject.sp"
+		class="com.rongji.websiteMonitor.webapp.subproject.controller.SubprojectController">
+		<property name="projectService" ref="projectService"></property>
+		<property name="subprojectService" ref="subprojectService"></property>
+		<property name="methodNameResolver" ref="paramResolver" />
+		<property name="typeService" ref="typeService"></property>
+		<property name="pointService" ref="pointService"></property>
+		<property name="thresholdService" ref="thresholdService"></property>
+	</bean>
+	
+	<bean name="/option.sp"
+		class="com.rongji.websiteMonitor.webapp.monitorOption.controller.MonitorOptionController">
+		<property name="thresholdService" ref="thresholdService"></property>
+		<property name="methodNameResolver" ref="paramResolver" />
+	</bean>
+	
+</beans>

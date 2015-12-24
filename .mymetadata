@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="dfish-servman"
+  id="myeclipse.1351823419553"
+  context-root="/dfish-servman"
+  j2ee-spec="5.0"
+  archive="dfish-servman.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

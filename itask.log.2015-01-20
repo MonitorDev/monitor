@@ -1,0 +1,459 @@
+2015-01-20 11:57:57,258 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@df8ff1: display name [org.springframework.context.support.ClassPathXmlApplicationContext@df8ff1]; startup date [Tue Jan 20 11:57:57 CST 2015]; root of context hierarchy
+2015-01-20 11:57:57,421 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2015-01-20 11:57:57,680 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@df8ff1]: org.springframework.beans.factory.support.DefaultListableBeanFactory@14da8f4
+2015-01-20 11:57:57,794 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@14da8f4: defining beans [dataSource,jdbcTemplate,sessionFactory,transactionManager,txProxyTemplate,PubCommonDAO,pointDao,pointService,typeDao,typeService,taskDao,taskService,taskResultDao,taskResultService,faultHistoryDao,faultHistoryService,alarmInformHistoryDao,alarmInformHistoryService,mailService,mailSender,snmpDao,snmpService,snmpFaultHistoryDao,snmpFaultHistoryService,schedulerDao,schedulerService,smsService,detialService]; root of factory hierarchy
+2015-01-20 11:57:58,022 INFO [org.hibernate.cfg.Environment] - Hibernate 3.2.5
+2015-01-20 11:57:58,025 INFO [org.hibernate.cfg.Environment] - hibernate.properties not found
+2015-01-20 11:57:58,027 INFO [org.hibernate.cfg.Environment] - Bytecode provider name : cglib
+2015-01-20 11:57:58,030 INFO [org.hibernate.cfg.Environment] - using JDK 1.4 java.sql.Timestamp handling
+2015-01-20 11:57:58,314 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.MonitoringPoint -> MONITORING_POINT
+2015-01-20 11:57:58,345 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.Monitortype -> MONITORTYPE
+2015-01-20 11:57:58,362 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.Task -> TASK
+2015-01-20 11:57:58,371 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.PubScheduler -> pub_scheduler
+2015-01-20 11:57:58,379 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.TaskResult -> TASK_RESULT
+2015-01-20 11:57:58,385 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.FaultHistory -> FAULT_HISTORY
+2015-01-20 11:57:58,391 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.AlarmInformHistory -> ALARM_INFORM_HISTORY
+2015-01-20 11:57:58,400 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.SnmpModel -> SNMP_RESULT
+2015-01-20 11:57:58,405 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.SnmpFaultHistory -> SNMP_FAULT_HISTORY
+2015-01-20 11:57:58,406 INFO [org.springframework.orm.hibernate3.LocalSessionFactoryBean] - Building new Hibernate SessionFactory
+2015-01-20 11:57:58,487 WARN [org.hibernate.cfg.Environment] - Property [hibernate.cglib.use_reflection_optimizer] has been renamed to [hibernate.bytecode.use_reflection_optimizer]; update your properties appropriately
+2015-01-20 11:57:58,489 INFO [org.hibernate.connection.ConnectionProviderFactory] - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2015-01-20 11:57:58,841 INFO [org.hibernate.cfg.SettingsFactory] - RDBMS: Oracle, version: Oracle Database 10g Enterprise Edition Release 10.2.0.1.0 - Production
+With the Partitioning, OLAP and Data Mining options
+2015-01-20 11:57:58,841 INFO [org.hibernate.cfg.SettingsFactory] - JDBC driver: Oracle JDBC driver, version: 10.2.0.3.0
+2015-01-20 11:57:58,854 INFO [org.hibernate.dialect.Dialect] - Using dialect: org.hibernate.dialect.OracleDialect
+2015-01-20 11:57:58,856 WARN [org.hibernate.dialect.Oracle9Dialect] - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2015-01-20 11:57:58,857 WARN [org.hibernate.dialect.OracleDialect] - The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2015-01-20 11:57:58,858 INFO [org.hibernate.transaction.TransactionFactoryFactory] - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2015-01-20 11:57:58,859 INFO [org.hibernate.transaction.TransactionManagerLookupFactory] - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-01-20 11:57:58,859 INFO [org.hibernate.cfg.SettingsFactory] - Automatic flush during beforeCompletion(): disabled
+2015-01-20 11:57:58,859 INFO [org.hibernate.cfg.SettingsFactory] - Automatic session close at end of transaction: disabled
+2015-01-20 11:57:58,859 INFO [org.hibernate.cfg.SettingsFactory] - JDBC batch size: 40
+2015-01-20 11:57:58,859 INFO [org.hibernate.cfg.SettingsFactory] - JDBC batch updates for versioned data: disabled
+2015-01-20 11:57:58,860 INFO [org.hibernate.cfg.SettingsFactory] - Scrollable result sets: enabled
+2015-01-20 11:57:58,860 INFO [org.hibernate.cfg.SettingsFactory] - JDBC3 getGeneratedKeys(): disabled
+2015-01-20 11:57:58,860 INFO [org.hibernate.cfg.SettingsFactory] - JDBC result set fetch size: 60
+2015-01-20 11:57:58,860 INFO [org.hibernate.cfg.SettingsFactory] - Connection release mode: auto
+2015-01-20 11:57:58,860 INFO [org.hibernate.cfg.SettingsFactory] - Maximum outer join fetch depth: 2
+2015-01-20 11:57:58,860 INFO [org.hibernate.cfg.SettingsFactory] - Default batch fetch size: 8
+2015-01-20 11:57:58,860 INFO [org.hibernate.cfg.SettingsFactory] - Generate SQL with comments: disabled
+2015-01-20 11:57:58,860 INFO [org.hibernate.cfg.SettingsFactory] - Order SQL updates by primary key: enabled
+2015-01-20 11:57:58,860 INFO [org.hibernate.cfg.SettingsFactory] - Order SQL inserts for batching: disabled
+2015-01-20 11:57:58,861 INFO [org.hibernate.cfg.SettingsFactory] - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-01-20 11:57:58,862 INFO [org.hibernate.hql.ast.ASTQueryTranslatorFactory] - Using ASTQueryTranslatorFactory
+2015-01-20 11:57:58,862 INFO [org.hibernate.cfg.SettingsFactory] - Query language substitutions: {}
+2015-01-20 11:57:58,862 INFO [org.hibernate.cfg.SettingsFactory] - JPA-QL strict compliance: disabled
+2015-01-20 11:57:58,863 INFO [org.hibernate.cfg.SettingsFactory] - Second-level cache: enabled
+2015-01-20 11:57:58,863 INFO [org.hibernate.cfg.SettingsFactory] - Query cache: disabled
+2015-01-20 11:57:58,863 INFO [org.hibernate.cfg.SettingsFactory] - Cache provider: org.hibernate.cache.NoCacheProvider
+2015-01-20 11:57:58,863 INFO [org.hibernate.cfg.SettingsFactory] - Optimize cache for minimal puts: enabled
+2015-01-20 11:57:58,863 INFO [org.hibernate.cfg.SettingsFactory] - Structured second-level cache entries: disabled
+2015-01-20 11:57:58,888 INFO [org.hibernate.cfg.SettingsFactory] - Statistics: disabled
+2015-01-20 11:57:58,888 INFO [org.hibernate.cfg.SettingsFactory] - Deleted entity synthetic identifier rollback: disabled
+2015-01-20 11:57:58,888 INFO [org.hibernate.cfg.SettingsFactory] - Default entity-mode: pojo
+2015-01-20 11:57:58,888 INFO [org.hibernate.cfg.SettingsFactory] - Named query checking : enabled
+2015-01-20 11:57:58,927 INFO [org.hibernate.impl.SessionFactoryImpl] - building session factory
+2015-01-20 11:57:59,234 INFO [org.hibernate.impl.SessionFactoryObjectFactory] - Not binding factory to JNDI, no JNDI name configured
+2015-01-20 11:57:59,262 INFO [org.springframework.orm.hibernate3.HibernateTransactionManager] - Using DataSource [org.apache.commons.dbcp.BasicDataSource@5f2db0] of Hibernate SessionFactory for HibernateTransactionManager
+2015-01-20 11:58:12,765 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@bf2d5e: display name [org.springframework.context.support.ClassPathXmlApplicationContext@bf2d5e]; startup date [Tue Jan 20 11:58:12 CST 2015]; root of context hierarchy
+2015-01-20 11:58:12,809 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2015-01-20 11:58:12,879 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@bf2d5e]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1968e23
+2015-01-20 11:58:12,916 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1968e23: defining beans [dataSource,jdbcTemplate,sessionFactory,transactionManager,txProxyTemplate,PubCommonDAO,pointDao,pointService,typeDao,typeService,taskDao,taskService,taskResultDao,taskResultService,faultHistoryDao,faultHistoryService,alarmInformHistoryDao,alarmInformHistoryService,mailService,mailSender,snmpDao,snmpService,snmpFaultHistoryDao,snmpFaultHistoryService,schedulerDao,schedulerService,smsService,detialService]; root of factory hierarchy
+2015-01-20 11:58:12,981 INFO [org.hibernate.cfg.Environment] - Hibernate 3.2.5
+2015-01-20 11:58:12,983 INFO [org.hibernate.cfg.Environment] - hibernate.properties not found
+2015-01-20 11:58:12,984 INFO [org.hibernate.cfg.Environment] - Bytecode provider name : cglib
+2015-01-20 11:58:12,986 INFO [org.hibernate.cfg.Environment] - using JDK 1.4 java.sql.Timestamp handling
+2015-01-20 11:58:13,097 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.MonitoringPoint -> MONITORING_POINT
+2015-01-20 11:58:13,117 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.Monitortype -> MONITORTYPE
+2015-01-20 11:58:13,130 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.Task -> TASK
+2015-01-20 11:58:13,139 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.PubScheduler -> pub_scheduler
+2015-01-20 11:58:13,148 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.TaskResult -> TASK_RESULT
+2015-01-20 11:58:13,154 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.FaultHistory -> FAULT_HISTORY
+2015-01-20 11:58:13,159 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.AlarmInformHistory -> ALARM_INFORM_HISTORY
+2015-01-20 11:58:13,168 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.SnmpModel -> SNMP_RESULT
+2015-01-20 11:58:13,175 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.SnmpFaultHistory -> SNMP_FAULT_HISTORY
+2015-01-20 11:58:13,176 INFO [org.springframework.orm.hibernate3.LocalSessionFactoryBean] - Building new Hibernate SessionFactory
+2015-01-20 11:58:13,212 WARN [org.hibernate.cfg.Environment] - Property [hibernate.cglib.use_reflection_optimizer] has been renamed to [hibernate.bytecode.use_reflection_optimizer]; update your properties appropriately
+2015-01-20 11:58:13,214 INFO [org.hibernate.connection.ConnectionProviderFactory] - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2015-01-20 11:58:13,376 INFO [org.hibernate.cfg.SettingsFactory] - RDBMS: Oracle, version: Oracle Database 10g Enterprise Edition Release 10.2.0.1.0 - Production
+With the Partitioning, OLAP and Data Mining options
+2015-01-20 11:58:13,376 INFO [org.hibernate.cfg.SettingsFactory] - JDBC driver: Oracle JDBC driver, version: 10.2.0.3.0
+2015-01-20 11:58:13,387 INFO [org.hibernate.dialect.Dialect] - Using dialect: org.hibernate.dialect.OracleDialect
+2015-01-20 11:58:13,388 WARN [org.hibernate.dialect.Oracle9Dialect] - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2015-01-20 11:58:13,389 WARN [org.hibernate.dialect.OracleDialect] - The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2015-01-20 11:58:13,390 INFO [org.hibernate.transaction.TransactionFactoryFactory] - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2015-01-20 11:58:13,390 INFO [org.hibernate.transaction.TransactionManagerLookupFactory] - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-01-20 11:58:13,390 INFO [org.hibernate.cfg.SettingsFactory] - Automatic flush during beforeCompletion(): disabled
+2015-01-20 11:58:13,390 INFO [org.hibernate.cfg.SettingsFactory] - Automatic session close at end of transaction: disabled
+2015-01-20 11:58:13,390 INFO [org.hibernate.cfg.SettingsFactory] - JDBC batch size: 40
+2015-01-20 11:58:13,390 INFO [org.hibernate.cfg.SettingsFactory] - JDBC batch updates for versioned data: disabled
+2015-01-20 11:58:13,391 INFO [org.hibernate.cfg.SettingsFactory] - Scrollable result sets: enabled
+2015-01-20 11:58:13,391 INFO [org.hibernate.cfg.SettingsFactory] - JDBC3 getGeneratedKeys(): disabled
+2015-01-20 11:58:13,391 INFO [org.hibernate.cfg.SettingsFactory] - JDBC result set fetch size: 60
+2015-01-20 11:58:13,391 INFO [org.hibernate.cfg.SettingsFactory] - Connection release mode: auto
+2015-01-20 11:58:13,391 INFO [org.hibernate.cfg.SettingsFactory] - Maximum outer join fetch depth: 2
+2015-01-20 11:58:13,391 INFO [org.hibernate.cfg.SettingsFactory] - Default batch fetch size: 8
+2015-01-20 11:58:13,392 INFO [org.hibernate.cfg.SettingsFactory] - Generate SQL with comments: disabled
+2015-01-20 11:58:13,392 INFO [org.hibernate.cfg.SettingsFactory] - Order SQL updates by primary key: enabled
+2015-01-20 11:58:13,392 INFO [org.hibernate.cfg.SettingsFactory] - Order SQL inserts for batching: disabled
+2015-01-20 11:58:13,392 INFO [org.hibernate.cfg.SettingsFactory] - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-01-20 11:58:13,393 INFO [org.hibernate.hql.ast.ASTQueryTranslatorFactory] - Using ASTQueryTranslatorFactory
+2015-01-20 11:58:13,393 INFO [org.hibernate.cfg.SettingsFactory] - Query language substitutions: {}
+2015-01-20 11:58:13,393 INFO [org.hibernate.cfg.SettingsFactory] - JPA-QL strict compliance: disabled
+2015-01-20 11:58:13,393 INFO [org.hibernate.cfg.SettingsFactory] - Second-level cache: enabled
+2015-01-20 11:58:13,393 INFO [org.hibernate.cfg.SettingsFactory] - Query cache: disabled
+2015-01-20 11:58:13,393 INFO [org.hibernate.cfg.SettingsFactory] - Cache provider: org.hibernate.cache.NoCacheProvider
+2015-01-20 11:58:13,393 INFO [org.hibernate.cfg.SettingsFactory] - Optimize cache for minimal puts: enabled
+2015-01-20 11:58:13,393 INFO [org.hibernate.cfg.SettingsFactory] - Structured second-level cache entries: disabled
+2015-01-20 11:58:13,395 INFO [org.hibernate.cfg.SettingsFactory] - Statistics: disabled
+2015-01-20 11:58:13,396 INFO [org.hibernate.cfg.SettingsFactory] - Deleted entity synthetic identifier rollback: disabled
+2015-01-20 11:58:13,396 INFO [org.hibernate.cfg.SettingsFactory] - Default entity-mode: pojo
+2015-01-20 11:58:13,396 INFO [org.hibernate.cfg.SettingsFactory] - Named query checking : enabled
+2015-01-20 11:58:13,411 INFO [org.hibernate.impl.SessionFactoryImpl] - building session factory
+2015-01-20 11:58:13,636 INFO [org.hibernate.impl.SessionFactoryObjectFactory] - Not binding factory to JNDI, no JNDI name configured
+2015-01-20 11:58:13,652 INFO [org.springframework.orm.hibernate3.HibernateTransactionManager] - Using DataSource [org.apache.commons.dbcp.BasicDataSource@1ad6b4b] of Hibernate SessionFactory for HibernateTransactionManager
+2015-01-20 11:58:47,269 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@bf2d5e: display name [org.springframework.context.support.ClassPathXmlApplicationContext@bf2d5e]; startup date [Tue Jan 20 11:58:47 CST 2015]; root of context hierarchy
+2015-01-20 11:58:47,313 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2015-01-20 11:58:47,382 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@bf2d5e]: org.springframework.beans.factory.support.DefaultListableBeanFactory@fe748f
+2015-01-20 11:58:47,418 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@fe748f: defining beans [dataSource,jdbcTemplate,sessionFactory,transactionManager,txProxyTemplate,PubCommonDAO,pointDao,pointService,typeDao,typeService,taskDao,taskService,taskResultDao,taskResultService,faultHistoryDao,faultHistoryService,alarmInformHistoryDao,alarmInformHistoryService,mailService,mailSender,snmpDao,snmpService,snmpFaultHistoryDao,snmpFaultHistoryService,schedulerDao,schedulerService,smsService,detialService]; root of factory hierarchy
+2015-01-20 11:58:47,489 INFO [org.hibernate.cfg.Environment] - Hibernate 3.2.5
+2015-01-20 11:58:47,491 INFO [org.hibernate.cfg.Environment] - hibernate.properties not found
+2015-01-20 11:58:47,492 INFO [org.hibernate.cfg.Environment] - Bytecode provider name : cglib
+2015-01-20 11:58:47,494 INFO [org.hibernate.cfg.Environment] - using JDK 1.4 java.sql.Timestamp handling
+2015-01-20 11:58:47,603 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.MonitoringPoint -> MONITORING_POINT
+2015-01-20 11:58:47,624 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.Monitortype -> MONITORTYPE
+2015-01-20 11:58:47,639 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.Task -> TASK
+2015-01-20 11:58:47,649 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.PubScheduler -> pub_scheduler
+2015-01-20 11:58:47,658 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.TaskResult -> TASK_RESULT
+2015-01-20 11:58:47,664 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.FaultHistory -> FAULT_HISTORY
+2015-01-20 11:58:47,672 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.AlarmInformHistory -> ALARM_INFORM_HISTORY
+2015-01-20 11:58:47,679 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.SnmpModel -> SNMP_RESULT
+2015-01-20 11:58:47,687 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.SnmpFaultHistory -> SNMP_FAULT_HISTORY
+2015-01-20 11:58:47,688 INFO [org.springframework.orm.hibernate3.LocalSessionFactoryBean] - Building new Hibernate SessionFactory
+2015-01-20 11:58:47,722 WARN [org.hibernate.cfg.Environment] - Property [hibernate.cglib.use_reflection_optimizer] has been renamed to [hibernate.bytecode.use_reflection_optimizer]; update your properties appropriately
+2015-01-20 11:58:47,723 INFO [org.hibernate.connection.ConnectionProviderFactory] - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2015-01-20 11:58:47,870 INFO [org.hibernate.cfg.SettingsFactory] - RDBMS: Oracle, version: Oracle Database 10g Enterprise Edition Release 10.2.0.1.0 - Production
+With the Partitioning, OLAP and Data Mining options
+2015-01-20 11:58:47,870 INFO [org.hibernate.cfg.SettingsFactory] - JDBC driver: Oracle JDBC driver, version: 10.2.0.3.0
+2015-01-20 11:58:47,881 INFO [org.hibernate.dialect.Dialect] - Using dialect: org.hibernate.dialect.OracleDialect
+2015-01-20 11:58:47,882 WARN [org.hibernate.dialect.Oracle9Dialect] - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2015-01-20 11:58:47,883 WARN [org.hibernate.dialect.OracleDialect] - The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2015-01-20 11:58:47,884 INFO [org.hibernate.transaction.TransactionFactoryFactory] - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2015-01-20 11:58:47,884 INFO [org.hibernate.transaction.TransactionManagerLookupFactory] - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-01-20 11:58:47,884 INFO [org.hibernate.cfg.SettingsFactory] - Automatic flush during beforeCompletion(): disabled
+2015-01-20 11:58:47,884 INFO [org.hibernate.cfg.SettingsFactory] - Automatic session close at end of transaction: disabled
+2015-01-20 11:58:47,884 INFO [org.hibernate.cfg.SettingsFactory] - JDBC batch size: 40
+2015-01-20 11:58:47,885 INFO [org.hibernate.cfg.SettingsFactory] - JDBC batch updates for versioned data: disabled
+2015-01-20 11:58:47,885 INFO [org.hibernate.cfg.SettingsFactory] - Scrollable result sets: enabled
+2015-01-20 11:58:47,885 INFO [org.hibernate.cfg.SettingsFactory] - JDBC3 getGeneratedKeys(): disabled
+2015-01-20 11:58:47,885 INFO [org.hibernate.cfg.SettingsFactory] - JDBC result set fetch size: 60
+2015-01-20 11:58:47,885 INFO [org.hibernate.cfg.SettingsFactory] - Connection release mode: auto
+2015-01-20 11:58:47,886 INFO [org.hibernate.cfg.SettingsFactory] - Maximum outer join fetch depth: 2
+2015-01-20 11:58:47,886 INFO [org.hibernate.cfg.SettingsFactory] - Default batch fetch size: 8
+2015-01-20 11:58:47,886 INFO [org.hibernate.cfg.SettingsFactory] - Generate SQL with comments: disabled
+2015-01-20 11:58:47,886 INFO [org.hibernate.cfg.SettingsFactory] - Order SQL updates by primary key: enabled
+2015-01-20 11:58:47,886 INFO [org.hibernate.cfg.SettingsFactory] - Order SQL inserts for batching: disabled
+2015-01-20 11:58:47,886 INFO [org.hibernate.cfg.SettingsFactory] - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-01-20 11:58:47,888 INFO [org.hibernate.hql.ast.ASTQueryTranslatorFactory] - Using ASTQueryTranslatorFactory
+2015-01-20 11:58:47,888 INFO [org.hibernate.cfg.SettingsFactory] - Query language substitutions: {}
+2015-01-20 11:58:47,888 INFO [org.hibernate.cfg.SettingsFactory] - JPA-QL strict compliance: disabled
+2015-01-20 11:58:47,888 INFO [org.hibernate.cfg.SettingsFactory] - Second-level cache: enabled
+2015-01-20 11:58:47,888 INFO [org.hibernate.cfg.SettingsFactory] - Query cache: disabled
+2015-01-20 11:58:47,888 INFO [org.hibernate.cfg.SettingsFactory] - Cache provider: org.hibernate.cache.NoCacheProvider
+2015-01-20 11:58:47,888 INFO [org.hibernate.cfg.SettingsFactory] - Optimize cache for minimal puts: enabled
+2015-01-20 11:58:47,888 INFO [org.hibernate.cfg.SettingsFactory] - Structured second-level cache entries: disabled
+2015-01-20 11:58:47,890 INFO [org.hibernate.cfg.SettingsFactory] - Statistics: disabled
+2015-01-20 11:58:47,890 INFO [org.hibernate.cfg.SettingsFactory] - Deleted entity synthetic identifier rollback: disabled
+2015-01-20 11:58:47,891 INFO [org.hibernate.cfg.SettingsFactory] - Default entity-mode: pojo
+2015-01-20 11:58:47,891 INFO [org.hibernate.cfg.SettingsFactory] - Named query checking : enabled
+2015-01-20 11:58:47,906 INFO [org.hibernate.impl.SessionFactoryImpl] - building session factory
+2015-01-20 11:58:48,127 INFO [org.hibernate.impl.SessionFactoryObjectFactory] - Not binding factory to JNDI, no JNDI name configured
+2015-01-20 11:58:48,143 INFO [org.springframework.orm.hibernate3.HibernateTransactionManager] - Using DataSource [org.apache.commons.dbcp.BasicDataSource@1ad6b4b] of Hibernate SessionFactory for HibernateTransactionManager
+2015-01-20 11:59:30,363 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@bf2d5e: display name [org.springframework.context.support.ClassPathXmlApplicationContext@bf2d5e]; startup date [Tue Jan 20 11:59:30 CST 2015]; root of context hierarchy
+2015-01-20 11:59:30,406 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2015-01-20 11:59:30,473 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@bf2d5e]: org.springframework.beans.factory.support.DefaultListableBeanFactory@fe748f
+2015-01-20 11:59:30,507 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@fe748f: defining beans [dataSource,jdbcTemplate,sessionFactory,transactionManager,txProxyTemplate,PubCommonDAO,pointDao,pointService,typeDao,typeService,taskDao,taskService,taskResultDao,taskResultService,faultHistoryDao,faultHistoryService,alarmInformHistoryDao,alarmInformHistoryService,mailService,mailSender,snmpDao,snmpService,snmpFaultHistoryDao,snmpFaultHistoryService,schedulerDao,schedulerService,smsService,detialService]; root of factory hierarchy
+2015-01-20 11:59:30,572 INFO [org.hibernate.cfg.Environment] - Hibernate 3.2.5
+2015-01-20 11:59:30,574 INFO [org.hibernate.cfg.Environment] - hibernate.properties not found
+2015-01-20 11:59:30,575 INFO [org.hibernate.cfg.Environment] - Bytecode provider name : cglib
+2015-01-20 11:59:30,576 INFO [org.hibernate.cfg.Environment] - using JDK 1.4 java.sql.Timestamp handling
+2015-01-20 11:59:30,687 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.MonitoringPoint -> MONITORING_POINT
+2015-01-20 11:59:30,707 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.Monitortype -> MONITORTYPE
+2015-01-20 11:59:30,720 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.Task -> TASK
+2015-01-20 11:59:30,728 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.PubScheduler -> pub_scheduler
+2015-01-20 11:59:30,736 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.TaskResult -> TASK_RESULT
+2015-01-20 11:59:30,743 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.FaultHistory -> FAULT_HISTORY
+2015-01-20 11:59:30,749 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.AlarmInformHistory -> ALARM_INFORM_HISTORY
+2015-01-20 11:59:30,757 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.SnmpModel -> SNMP_RESULT
+2015-01-20 11:59:30,763 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.SnmpFaultHistory -> SNMP_FAULT_HISTORY
+2015-01-20 11:59:30,763 INFO [org.springframework.orm.hibernate3.LocalSessionFactoryBean] - Building new Hibernate SessionFactory
+2015-01-20 11:59:30,798 WARN [org.hibernate.cfg.Environment] - Property [hibernate.cglib.use_reflection_optimizer] has been renamed to [hibernate.bytecode.use_reflection_optimizer]; update your properties appropriately
+2015-01-20 11:59:30,800 INFO [org.hibernate.connection.ConnectionProviderFactory] - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2015-01-20 11:59:30,947 INFO [org.hibernate.cfg.SettingsFactory] - RDBMS: Oracle, version: Oracle Database 10g Enterprise Edition Release 10.2.0.1.0 - Production
+With the Partitioning, OLAP and Data Mining options
+2015-01-20 11:59:30,947 INFO [org.hibernate.cfg.SettingsFactory] - JDBC driver: Oracle JDBC driver, version: 10.2.0.3.0
+2015-01-20 11:59:30,957 INFO [org.hibernate.dialect.Dialect] - Using dialect: org.hibernate.dialect.OracleDialect
+2015-01-20 11:59:30,959 WARN [org.hibernate.dialect.Oracle9Dialect] - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2015-01-20 11:59:30,960 WARN [org.hibernate.dialect.OracleDialect] - The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2015-01-20 11:59:30,960 INFO [org.hibernate.transaction.TransactionFactoryFactory] - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2015-01-20 11:59:30,961 INFO [org.hibernate.transaction.TransactionManagerLookupFactory] - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-01-20 11:59:30,961 INFO [org.hibernate.cfg.SettingsFactory] - Automatic flush during beforeCompletion(): disabled
+2015-01-20 11:59:30,961 INFO [org.hibernate.cfg.SettingsFactory] - Automatic session close at end of transaction: disabled
+2015-01-20 11:59:30,961 INFO [org.hibernate.cfg.SettingsFactory] - JDBC batch size: 40
+2015-01-20 11:59:30,961 INFO [org.hibernate.cfg.SettingsFactory] - JDBC batch updates for versioned data: disabled
+2015-01-20 11:59:30,962 INFO [org.hibernate.cfg.SettingsFactory] - Scrollable result sets: enabled
+2015-01-20 11:59:30,962 INFO [org.hibernate.cfg.SettingsFactory] - JDBC3 getGeneratedKeys(): disabled
+2015-01-20 11:59:30,962 INFO [org.hibernate.cfg.SettingsFactory] - JDBC result set fetch size: 60
+2015-01-20 11:59:30,962 INFO [org.hibernate.cfg.SettingsFactory] - Connection release mode: auto
+2015-01-20 11:59:30,962 INFO [org.hibernate.cfg.SettingsFactory] - Maximum outer join fetch depth: 2
+2015-01-20 11:59:30,962 INFO [org.hibernate.cfg.SettingsFactory] - Default batch fetch size: 8
+2015-01-20 11:59:30,962 INFO [org.hibernate.cfg.SettingsFactory] - Generate SQL with comments: disabled
+2015-01-20 11:59:30,962 INFO [org.hibernate.cfg.SettingsFactory] - Order SQL updates by primary key: enabled
+2015-01-20 11:59:30,962 INFO [org.hibernate.cfg.SettingsFactory] - Order SQL inserts for batching: disabled
+2015-01-20 11:59:30,963 INFO [org.hibernate.cfg.SettingsFactory] - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-01-20 11:59:30,964 INFO [org.hibernate.hql.ast.ASTQueryTranslatorFactory] - Using ASTQueryTranslatorFactory
+2015-01-20 11:59:30,964 INFO [org.hibernate.cfg.SettingsFactory] - Query language substitutions: {}
+2015-01-20 11:59:30,964 INFO [org.hibernate.cfg.SettingsFactory] - JPA-QL strict compliance: disabled
+2015-01-20 11:59:30,964 INFO [org.hibernate.cfg.SettingsFactory] - Second-level cache: enabled
+2015-01-20 11:59:30,964 INFO [org.hibernate.cfg.SettingsFactory] - Query cache: disabled
+2015-01-20 11:59:30,964 INFO [org.hibernate.cfg.SettingsFactory] - Cache provider: org.hibernate.cache.NoCacheProvider
+2015-01-20 11:59:30,964 INFO [org.hibernate.cfg.SettingsFactory] - Optimize cache for minimal puts: enabled
+2015-01-20 11:59:30,964 INFO [org.hibernate.cfg.SettingsFactory] - Structured second-level cache entries: disabled
+2015-01-20 11:59:30,966 INFO [org.hibernate.cfg.SettingsFactory] - Statistics: disabled
+2015-01-20 11:59:30,966 INFO [org.hibernate.cfg.SettingsFactory] - Deleted entity synthetic identifier rollback: disabled
+2015-01-20 11:59:30,966 INFO [org.hibernate.cfg.SettingsFactory] - Default entity-mode: pojo
+2015-01-20 11:59:30,966 INFO [org.hibernate.cfg.SettingsFactory] - Named query checking : enabled
+2015-01-20 11:59:30,982 INFO [org.hibernate.impl.SessionFactoryImpl] - building session factory
+2015-01-20 11:59:31,205 INFO [org.hibernate.impl.SessionFactoryObjectFactory] - Not binding factory to JNDI, no JNDI name configured
+2015-01-20 11:59:31,221 INFO [org.springframework.orm.hibernate3.HibernateTransactionManager] - Using DataSource [org.apache.commons.dbcp.BasicDataSource@1ad6b4b] of Hibernate SessionFactory for HibernateTransactionManager
+2015-01-20 12:00:36,902 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@bf2d5e: display name [org.springframework.context.support.ClassPathXmlApplicationContext@bf2d5e]; startup date [Tue Jan 20 12:00:36 CST 2015]; root of context hierarchy
+2015-01-20 12:00:36,945 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2015-01-20 12:00:37,023 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@bf2d5e]: org.springframework.beans.factory.support.DefaultListableBeanFactory@fe748f
+2015-01-20 12:00:37,062 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@fe748f: defining beans [dataSource,jdbcTemplate,sessionFactory,transactionManager,txProxyTemplate,PubCommonDAO,pointDao,pointService,typeDao,typeService,taskDao,taskService,taskResultDao,taskResultService,faultHistoryDao,faultHistoryService,alarmInformHistoryDao,alarmInformHistoryService,mailService,mailSender,snmpDao,snmpService,snmpFaultHistoryDao,snmpFaultHistoryService,schedulerDao,schedulerService,thresholdDao,smsService,detialService]; root of factory hierarchy
+2015-01-20 12:00:37,138 INFO [org.hibernate.cfg.Environment] - Hibernate 3.2.5
+2015-01-20 12:00:37,141 INFO [org.hibernate.cfg.Environment] - hibernate.properties not found
+2015-01-20 12:00:37,141 INFO [org.hibernate.cfg.Environment] - Bytecode provider name : cglib
+2015-01-20 12:00:37,143 INFO [org.hibernate.cfg.Environment] - using JDK 1.4 java.sql.Timestamp handling
+2015-01-20 12:00:37,255 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.MonitoringPoint -> MONITORING_POINT
+2015-01-20 12:00:37,275 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.Monitortype -> MONITORTYPE
+2015-01-20 12:00:37,288 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.Task -> TASK
+2015-01-20 12:00:37,296 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.PubScheduler -> pub_scheduler
+2015-01-20 12:00:37,304 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.TaskResult -> TASK_RESULT
+2015-01-20 12:00:37,310 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.FaultHistory -> FAULT_HISTORY
+2015-01-20 12:00:37,316 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.AlarmInformHistory -> ALARM_INFORM_HISTORY
+2015-01-20 12:00:37,326 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.SnmpModel -> SNMP_RESULT
+2015-01-20 12:00:37,333 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.SnmpFaultHistory -> SNMP_FAULT_HISTORY
+2015-01-20 12:00:37,339 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.Threshold -> THRESHOLDVALUE
+2015-01-20 12:00:37,340 INFO [org.springframework.orm.hibernate3.LocalSessionFactoryBean] - Building new Hibernate SessionFactory
+2015-01-20 12:00:37,374 WARN [org.hibernate.cfg.Environment] - Property [hibernate.cglib.use_reflection_optimizer] has been renamed to [hibernate.bytecode.use_reflection_optimizer]; update your properties appropriately
+2015-01-20 12:00:37,376 INFO [org.hibernate.connection.ConnectionProviderFactory] - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2015-01-20 12:00:37,535 INFO [org.hibernate.cfg.SettingsFactory] - RDBMS: Oracle, version: Oracle Database 10g Enterprise Edition Release 10.2.0.1.0 - Production
+With the Partitioning, OLAP and Data Mining options
+2015-01-20 12:00:37,535 INFO [org.hibernate.cfg.SettingsFactory] - JDBC driver: Oracle JDBC driver, version: 10.2.0.3.0
+2015-01-20 12:00:37,544 INFO [org.hibernate.dialect.Dialect] - Using dialect: org.hibernate.dialect.OracleDialect
+2015-01-20 12:00:37,545 WARN [org.hibernate.dialect.Oracle9Dialect] - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2015-01-20 12:00:37,546 WARN [org.hibernate.dialect.OracleDialect] - The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2015-01-20 12:00:37,547 INFO [org.hibernate.transaction.TransactionFactoryFactory] - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2015-01-20 12:00:37,547 INFO [org.hibernate.transaction.TransactionManagerLookupFactory] - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-01-20 12:00:37,547 INFO [org.hibernate.cfg.SettingsFactory] - Automatic flush during beforeCompletion(): disabled
+2015-01-20 12:00:37,547 INFO [org.hibernate.cfg.SettingsFactory] - Automatic session close at end of transaction: disabled
+2015-01-20 12:00:37,548 INFO [org.hibernate.cfg.SettingsFactory] - JDBC batch size: 40
+2015-01-20 12:00:37,548 INFO [org.hibernate.cfg.SettingsFactory] - JDBC batch updates for versioned data: disabled
+2015-01-20 12:00:37,548 INFO [org.hibernate.cfg.SettingsFactory] - Scrollable result sets: enabled
+2015-01-20 12:00:37,548 INFO [org.hibernate.cfg.SettingsFactory] - JDBC3 getGeneratedKeys(): disabled
+2015-01-20 12:00:37,548 INFO [org.hibernate.cfg.SettingsFactory] - JDBC result set fetch size: 60
+2015-01-20 12:00:37,548 INFO [org.hibernate.cfg.SettingsFactory] - Connection release mode: auto
+2015-01-20 12:00:37,549 INFO [org.hibernate.cfg.SettingsFactory] - Maximum outer join fetch depth: 2
+2015-01-20 12:00:37,549 INFO [org.hibernate.cfg.SettingsFactory] - Default batch fetch size: 8
+2015-01-20 12:00:37,549 INFO [org.hibernate.cfg.SettingsFactory] - Generate SQL with comments: disabled
+2015-01-20 12:00:37,549 INFO [org.hibernate.cfg.SettingsFactory] - Order SQL updates by primary key: enabled
+2015-01-20 12:00:37,549 INFO [org.hibernate.cfg.SettingsFactory] - Order SQL inserts for batching: disabled
+2015-01-20 12:00:37,549 INFO [org.hibernate.cfg.SettingsFactory] - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-01-20 12:00:37,550 INFO [org.hibernate.hql.ast.ASTQueryTranslatorFactory] - Using ASTQueryTranslatorFactory
+2015-01-20 12:00:37,550 INFO [org.hibernate.cfg.SettingsFactory] - Query language substitutions: {}
+2015-01-20 12:00:37,550 INFO [org.hibernate.cfg.SettingsFactory] - JPA-QL strict compliance: disabled
+2015-01-20 12:00:37,550 INFO [org.hibernate.cfg.SettingsFactory] - Second-level cache: enabled
+2015-01-20 12:00:37,550 INFO [org.hibernate.cfg.SettingsFactory] - Query cache: disabled
+2015-01-20 12:00:37,551 INFO [org.hibernate.cfg.SettingsFactory] - Cache provider: org.hibernate.cache.NoCacheProvider
+2015-01-20 12:00:37,551 INFO [org.hibernate.cfg.SettingsFactory] - Optimize cache for minimal puts: enabled
+2015-01-20 12:00:37,551 INFO [org.hibernate.cfg.SettingsFactory] - Structured second-level cache entries: disabled
+2015-01-20 12:00:37,553 INFO [org.hibernate.cfg.SettingsFactory] - Statistics: disabled
+2015-01-20 12:00:37,553 INFO [org.hibernate.cfg.SettingsFactory] - Deleted entity synthetic identifier rollback: disabled
+2015-01-20 12:00:37,553 INFO [org.hibernate.cfg.SettingsFactory] - Default entity-mode: pojo
+2015-01-20 12:00:37,553 INFO [org.hibernate.cfg.SettingsFactory] - Named query checking : enabled
+2015-01-20 12:00:37,571 INFO [org.hibernate.impl.SessionFactoryImpl] - building session factory
+2015-01-20 12:00:37,767 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@fe748f: defining beans [dataSource,jdbcTemplate,sessionFactory,transactionManager,txProxyTemplate,PubCommonDAO,pointDao,pointService,typeDao,typeService,taskDao,taskService,taskResultDao,taskResultService,faultHistoryDao,faultHistoryService,alarmInformHistoryDao,alarmInformHistoryService,mailService,mailSender,snmpDao,snmpService,snmpFaultHistoryDao,snmpFaultHistoryService,schedulerDao,schedulerService,thresholdDao,smsService,detialService]; root of factory hierarchy
+2015-01-20 12:01:39,294 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@13bad12: display name [org.springframework.context.support.ClassPathXmlApplicationContext@13bad12]; startup date [Tue Jan 20 12:01:39 CST 2015]; root of context hierarchy
+2015-01-20 12:01:39,338 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2015-01-20 12:01:39,406 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@13bad12]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1968e23
+2015-01-20 12:01:39,446 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1968e23: defining beans [dataSource,jdbcTemplate,sessionFactory,transactionManager,txProxyTemplate,PubCommonDAO,pointDao,pointService,typeDao,typeService,taskDao,taskService,taskResultDao,taskResultService,faultHistoryDao,faultHistoryService,alarmInformHistoryDao,alarmInformHistoryService,mailService,mailSender,snmpDao,snmpService,snmpFaultHistoryDao,snmpFaultHistoryService,schedulerDao,schedulerService,thresholdDao,smsService,detialService]; root of factory hierarchy
+2015-01-20 12:01:39,513 INFO [org.hibernate.cfg.Environment] - Hibernate 3.2.5
+2015-01-20 12:01:39,515 INFO [org.hibernate.cfg.Environment] - hibernate.properties not found
+2015-01-20 12:01:39,516 INFO [org.hibernate.cfg.Environment] - Bytecode provider name : cglib
+2015-01-20 12:01:39,517 INFO [org.hibernate.cfg.Environment] - using JDK 1.4 java.sql.Timestamp handling
+2015-01-20 12:01:39,626 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.MonitoringPoint -> MONITORING_POINT
+2015-01-20 12:01:39,646 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.Monitortype -> MONITORTYPE
+2015-01-20 12:01:39,660 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.Task -> TASK
+2015-01-20 12:01:39,669 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.PubScheduler -> pub_scheduler
+2015-01-20 12:01:39,679 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.TaskResult -> TASK_RESULT
+2015-01-20 12:01:39,684 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.FaultHistory -> FAULT_HISTORY
+2015-01-20 12:01:39,690 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.AlarmInformHistory -> ALARM_INFORM_HISTORY
+2015-01-20 12:01:39,697 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.SnmpModel -> SNMP_RESULT
+2015-01-20 12:01:39,702 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.SnmpFaultHistory -> SNMP_FAULT_HISTORY
+2015-01-20 12:01:39,709 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.Threshold -> THRESHOLDVALUE
+2015-01-20 12:01:39,710 INFO [org.springframework.orm.hibernate3.LocalSessionFactoryBean] - Building new Hibernate SessionFactory
+2015-01-20 12:01:39,744 WARN [org.hibernate.cfg.Environment] - Property [hibernate.cglib.use_reflection_optimizer] has been renamed to [hibernate.bytecode.use_reflection_optimizer]; update your properties appropriately
+2015-01-20 12:01:39,746 INFO [org.hibernate.connection.ConnectionProviderFactory] - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2015-01-20 12:01:39,888 INFO [org.hibernate.cfg.SettingsFactory] - RDBMS: Oracle, version: Oracle Database 10g Enterprise Edition Release 10.2.0.1.0 - Production
+With the Partitioning, OLAP and Data Mining options
+2015-01-20 12:01:39,889 INFO [org.hibernate.cfg.SettingsFactory] - JDBC driver: Oracle JDBC driver, version: 10.2.0.3.0
+2015-01-20 12:01:39,898 INFO [org.hibernate.dialect.Dialect] - Using dialect: org.hibernate.dialect.OracleDialect
+2015-01-20 12:01:39,899 WARN [org.hibernate.dialect.Oracle9Dialect] - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2015-01-20 12:01:39,901 WARN [org.hibernate.dialect.OracleDialect] - The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2015-01-20 12:01:39,901 INFO [org.hibernate.transaction.TransactionFactoryFactory] - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2015-01-20 12:01:39,902 INFO [org.hibernate.transaction.TransactionManagerLookupFactory] - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-01-20 12:01:39,902 INFO [org.hibernate.cfg.SettingsFactory] - Automatic flush during beforeCompletion(): disabled
+2015-01-20 12:01:39,902 INFO [org.hibernate.cfg.SettingsFactory] - Automatic session close at end of transaction: disabled
+2015-01-20 12:01:39,902 INFO [org.hibernate.cfg.SettingsFactory] - JDBC batch size: 40
+2015-01-20 12:01:39,902 INFO [org.hibernate.cfg.SettingsFactory] - JDBC batch updates for versioned data: disabled
+2015-01-20 12:01:39,903 INFO [org.hibernate.cfg.SettingsFactory] - Scrollable result sets: enabled
+2015-01-20 12:01:39,903 INFO [org.hibernate.cfg.SettingsFactory] - JDBC3 getGeneratedKeys(): disabled
+2015-01-20 12:01:39,903 INFO [org.hibernate.cfg.SettingsFactory] - JDBC result set fetch size: 60
+2015-01-20 12:01:39,904 INFO [org.hibernate.cfg.SettingsFactory] - Connection release mode: auto
+2015-01-20 12:01:39,904 INFO [org.hibernate.cfg.SettingsFactory] - Maximum outer join fetch depth: 2
+2015-01-20 12:01:39,904 INFO [org.hibernate.cfg.SettingsFactory] - Default batch fetch size: 8
+2015-01-20 12:01:39,904 INFO [org.hibernate.cfg.SettingsFactory] - Generate SQL with comments: disabled
+2015-01-20 12:01:39,904 INFO [org.hibernate.cfg.SettingsFactory] - Order SQL updates by primary key: enabled
+2015-01-20 12:01:39,904 INFO [org.hibernate.cfg.SettingsFactory] - Order SQL inserts for batching: disabled
+2015-01-20 12:01:39,904 INFO [org.hibernate.cfg.SettingsFactory] - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-01-20 12:01:39,906 INFO [org.hibernate.hql.ast.ASTQueryTranslatorFactory] - Using ASTQueryTranslatorFactory
+2015-01-20 12:01:39,906 INFO [org.hibernate.cfg.SettingsFactory] - Query language substitutions: {}
+2015-01-20 12:01:39,906 INFO [org.hibernate.cfg.SettingsFactory] - JPA-QL strict compliance: disabled
+2015-01-20 12:01:39,906 INFO [org.hibernate.cfg.SettingsFactory] - Second-level cache: enabled
+2015-01-20 12:01:39,906 INFO [org.hibernate.cfg.SettingsFactory] - Query cache: disabled
+2015-01-20 12:01:39,906 INFO [org.hibernate.cfg.SettingsFactory] - Cache provider: org.hibernate.cache.NoCacheProvider
+2015-01-20 12:01:39,906 INFO [org.hibernate.cfg.SettingsFactory] - Optimize cache for minimal puts: enabled
+2015-01-20 12:01:39,906 INFO [org.hibernate.cfg.SettingsFactory] - Structured second-level cache entries: disabled
+2015-01-20 12:01:39,910 INFO [org.hibernate.cfg.SettingsFactory] - Statistics: disabled
+2015-01-20 12:01:39,910 INFO [org.hibernate.cfg.SettingsFactory] - Deleted entity synthetic identifier rollback: disabled
+2015-01-20 12:01:39,910 INFO [org.hibernate.cfg.SettingsFactory] - Default entity-mode: pojo
+2015-01-20 12:01:39,911 INFO [org.hibernate.cfg.SettingsFactory] - Named query checking : enabled
+2015-01-20 12:01:39,925 INFO [org.hibernate.impl.SessionFactoryImpl] - building session factory
+2015-01-20 12:01:40,155 INFO [org.hibernate.impl.SessionFactoryObjectFactory] - Not binding factory to JNDI, no JNDI name configured
+2015-01-20 12:01:40,173 INFO [org.springframework.orm.hibernate3.HibernateTransactionManager] - Using DataSource [org.apache.commons.dbcp.BasicDataSource@15d3388] of Hibernate SessionFactory for HibernateTransactionManager
+2015-01-20 13:10:02,421 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@bf2d5e: display name [org.springframework.context.support.ClassPathXmlApplicationContext@bf2d5e]; startup date [Tue Jan 20 13:10:02 CST 2015]; root of context hierarchy
+2015-01-20 13:10:02,466 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2015-01-20 13:10:02,536 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@bf2d5e]: org.springframework.beans.factory.support.DefaultListableBeanFactory@fe748f
+2015-01-20 13:10:02,573 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@fe748f: defining beans [dataSource,jdbcTemplate,sessionFactory,transactionManager,txProxyTemplate,PubCommonDAO,pointDao,pointService,typeDao,typeService,taskDao,taskService,taskResultDao,taskResultService,faultHistoryDao,faultHistoryService,alarmInformHistoryDao,alarmInformHistoryService,mailService,mailSender,snmpDao,snmpService,snmpFaultHistoryDao,snmpFaultHistoryService,schedulerDao,schedulerService,thresholdDao,smsService,detialService]; root of factory hierarchy
+2015-01-20 13:10:02,647 INFO [org.hibernate.cfg.Environment] - Hibernate 3.2.5
+2015-01-20 13:10:02,650 INFO [org.hibernate.cfg.Environment] - hibernate.properties not found
+2015-01-20 13:10:02,650 INFO [org.hibernate.cfg.Environment] - Bytecode provider name : cglib
+2015-01-20 13:10:02,652 INFO [org.hibernate.cfg.Environment] - using JDK 1.4 java.sql.Timestamp handling
+2015-01-20 13:10:02,759 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.MonitoringPoint -> MONITORING_POINT
+2015-01-20 13:10:02,778 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.Monitortype -> MONITORTYPE
+2015-01-20 13:10:02,791 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.Task -> TASK
+2015-01-20 13:10:02,801 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.PubScheduler -> pub_scheduler
+2015-01-20 13:10:02,809 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.TaskResult -> TASK_RESULT
+2015-01-20 13:10:02,817 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.FaultHistory -> FAULT_HISTORY
+2015-01-20 13:10:02,823 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.AlarmInformHistory -> ALARM_INFORM_HISTORY
+2015-01-20 13:10:02,831 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.SnmpModel -> SNMP_RESULT
+2015-01-20 13:10:02,839 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.SnmpFaultHistory -> SNMP_FAULT_HISTORY
+2015-01-20 13:10:02,845 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.Threshold -> THRESHOLDVALUE
+2015-01-20 13:10:02,846 INFO [org.springframework.orm.hibernate3.LocalSessionFactoryBean] - Building new Hibernate SessionFactory
+2015-01-20 13:10:02,880 WARN [org.hibernate.cfg.Environment] - Property [hibernate.cglib.use_reflection_optimizer] has been renamed to [hibernate.bytecode.use_reflection_optimizer]; update your properties appropriately
+2015-01-20 13:10:02,881 INFO [org.hibernate.connection.ConnectionProviderFactory] - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2015-01-20 13:10:03,040 INFO [org.hibernate.cfg.SettingsFactory] - RDBMS: Oracle, version: Oracle Database 10g Enterprise Edition Release 10.2.0.1.0 - Production
+With the Partitioning, OLAP and Data Mining options
+2015-01-20 13:10:03,040 INFO [org.hibernate.cfg.SettingsFactory] - JDBC driver: Oracle JDBC driver, version: 10.2.0.3.0
+2015-01-20 13:10:03,051 INFO [org.hibernate.dialect.Dialect] - Using dialect: org.hibernate.dialect.OracleDialect
+2015-01-20 13:10:03,052 WARN [org.hibernate.dialect.Oracle9Dialect] - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2015-01-20 13:10:03,054 WARN [org.hibernate.dialect.OracleDialect] - The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2015-01-20 13:10:03,054 INFO [org.hibernate.transaction.TransactionFactoryFactory] - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2015-01-20 13:10:03,055 INFO [org.hibernate.transaction.TransactionManagerLookupFactory] - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-01-20 13:10:03,055 INFO [org.hibernate.cfg.SettingsFactory] - Automatic flush during beforeCompletion(): disabled
+2015-01-20 13:10:03,055 INFO [org.hibernate.cfg.SettingsFactory] - Automatic session close at end of transaction: disabled
+2015-01-20 13:10:03,055 INFO [org.hibernate.cfg.SettingsFactory] - JDBC batch size: 40
+2015-01-20 13:10:03,055 INFO [org.hibernate.cfg.SettingsFactory] - JDBC batch updates for versioned data: disabled
+2015-01-20 13:10:03,055 INFO [org.hibernate.cfg.SettingsFactory] - Scrollable result sets: enabled
+2015-01-20 13:10:03,055 INFO [org.hibernate.cfg.SettingsFactory] - JDBC3 getGeneratedKeys(): disabled
+2015-01-20 13:10:03,055 INFO [org.hibernate.cfg.SettingsFactory] - JDBC result set fetch size: 60
+2015-01-20 13:10:03,056 INFO [org.hibernate.cfg.SettingsFactory] - Connection release mode: auto
+2015-01-20 13:10:03,056 INFO [org.hibernate.cfg.SettingsFactory] - Maximum outer join fetch depth: 2
+2015-01-20 13:10:03,056 INFO [org.hibernate.cfg.SettingsFactory] - Default batch fetch size: 8
+2015-01-20 13:10:03,056 INFO [org.hibernate.cfg.SettingsFactory] - Generate SQL with comments: disabled
+2015-01-20 13:10:03,056 INFO [org.hibernate.cfg.SettingsFactory] - Order SQL updates by primary key: enabled
+2015-01-20 13:10:03,056 INFO [org.hibernate.cfg.SettingsFactory] - Order SQL inserts for batching: disabled
+2015-01-20 13:10:03,056 INFO [org.hibernate.cfg.SettingsFactory] - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-01-20 13:10:03,058 INFO [org.hibernate.hql.ast.ASTQueryTranslatorFactory] - Using ASTQueryTranslatorFactory
+2015-01-20 13:10:03,058 INFO [org.hibernate.cfg.SettingsFactory] - Query language substitutions: {}
+2015-01-20 13:10:03,058 INFO [org.hibernate.cfg.SettingsFactory] - JPA-QL strict compliance: disabled
+2015-01-20 13:10:03,058 INFO [org.hibernate.cfg.SettingsFactory] - Second-level cache: enabled
+2015-01-20 13:10:03,058 INFO [org.hibernate.cfg.SettingsFactory] - Query cache: disabled
+2015-01-20 13:10:03,058 INFO [org.hibernate.cfg.SettingsFactory] - Cache provider: org.hibernate.cache.NoCacheProvider
+2015-01-20 13:10:03,058 INFO [org.hibernate.cfg.SettingsFactory] - Optimize cache for minimal puts: enabled
+2015-01-20 13:10:03,058 INFO [org.hibernate.cfg.SettingsFactory] - Structured second-level cache entries: disabled
+2015-01-20 13:10:03,060 INFO [org.hibernate.cfg.SettingsFactory] - Statistics: disabled
+2015-01-20 13:10:03,061 INFO [org.hibernate.cfg.SettingsFactory] - Deleted entity synthetic identifier rollback: disabled
+2015-01-20 13:10:03,061 INFO [org.hibernate.cfg.SettingsFactory] - Default entity-mode: pojo
+2015-01-20 13:10:03,061 INFO [org.hibernate.cfg.SettingsFactory] - Named query checking : enabled
+2015-01-20 13:10:03,076 INFO [org.hibernate.impl.SessionFactoryImpl] - building session factory
+2015-01-20 13:10:03,310 INFO [org.hibernate.impl.SessionFactoryObjectFactory] - Not binding factory to JNDI, no JNDI name configured
+2015-01-20 13:10:03,325 INFO [org.springframework.orm.hibernate3.HibernateTransactionManager] - Using DataSource [org.apache.commons.dbcp.BasicDataSource@1922f46] of Hibernate SessionFactory for HibernateTransactionManager
+2015-01-20 13:16:45,683 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@bf2d5e: display name [org.springframework.context.support.ClassPathXmlApplicationContext@bf2d5e]; startup date [Tue Jan 20 13:16:45 CST 2015]; root of context hierarchy
+2015-01-20 13:16:45,726 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2015-01-20 13:16:45,796 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@bf2d5e]: org.springframework.beans.factory.support.DefaultListableBeanFactory@fe748f
+2015-01-20 13:16:45,831 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@fe748f: defining beans [dataSource,jdbcTemplate,sessionFactory,transactionManager,txProxyTemplate,PubCommonDAO,pointDao,pointService,typeDao,typeService,taskDao,taskService,taskResultDao,taskResultService,faultHistoryDao,faultHistoryService,alarmInformHistoryDao,alarmInformHistoryService,mailService,mailSender,snmpDao,snmpService,snmpFaultHistoryDao,snmpFaultHistoryService,schedulerDao,schedulerService,thresholdDao,smsService,detialService]; root of factory hierarchy
+2015-01-20 13:16:45,896 INFO [org.hibernate.cfg.Environment] - Hibernate 3.2.5
+2015-01-20 13:16:45,898 INFO [org.hibernate.cfg.Environment] - hibernate.properties not found
+2015-01-20 13:16:45,899 INFO [org.hibernate.cfg.Environment] - Bytecode provider name : cglib
+2015-01-20 13:16:45,901 INFO [org.hibernate.cfg.Environment] - using JDK 1.4 java.sql.Timestamp handling
+2015-01-20 13:16:46,010 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.MonitoringPoint -> MONITORING_POINT
+2015-01-20 13:16:46,032 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.Monitortype -> MONITORTYPE
+2015-01-20 13:16:46,045 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.Task -> TASK
+2015-01-20 13:16:46,052 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.PubScheduler -> pub_scheduler
+2015-01-20 13:16:46,061 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.TaskResult -> TASK_RESULT
+2015-01-20 13:16:46,067 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.FaultHistory -> FAULT_HISTORY
+2015-01-20 13:16:46,072 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.AlarmInformHistory -> ALARM_INFORM_HISTORY
+2015-01-20 13:16:46,081 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.SnmpModel -> SNMP_RESULT
+2015-01-20 13:16:46,087 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.SnmpFaultHistory -> SNMP_FAULT_HISTORY
+2015-01-20 13:16:46,094 INFO [org.hibernate.cfg.HbmBinder] - Mapping class: com.rongji.websiteMonitor.persistence.Threshold -> THRESHOLDVALUE
+2015-01-20 13:16:46,096 INFO [org.springframework.orm.hibernate3.LocalSessionFactoryBean] - Building new Hibernate SessionFactory
+2015-01-20 13:16:46,128 WARN [org.hibernate.cfg.Environment] - Property [hibernate.cglib.use_reflection_optimizer] has been renamed to [hibernate.bytecode.use_reflection_optimizer]; update your properties appropriately
+2015-01-20 13:16:46,130 INFO [org.hibernate.connection.ConnectionProviderFactory] - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2015-01-20 13:16:46,277 INFO [org.hibernate.cfg.SettingsFactory] - RDBMS: Oracle, version: Oracle Database 10g Enterprise Edition Release 10.2.0.1.0 - Production
+With the Partitioning, OLAP and Data Mining options
+2015-01-20 13:16:46,277 INFO [org.hibernate.cfg.SettingsFactory] - JDBC driver: Oracle JDBC driver, version: 10.2.0.3.0
+2015-01-20 13:16:46,287 INFO [org.hibernate.dialect.Dialect] - Using dialect: org.hibernate.dialect.OracleDialect
+2015-01-20 13:16:46,288 WARN [org.hibernate.dialect.Oracle9Dialect] - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2015-01-20 13:16:46,289 WARN [org.hibernate.dialect.OracleDialect] - The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2015-01-20 13:16:46,290 INFO [org.hibernate.transaction.TransactionFactoryFactory] - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2015-01-20 13:16:46,290 INFO [org.hibernate.transaction.TransactionManagerLookupFactory] - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-01-20 13:16:46,291 INFO [org.hibernate.cfg.SettingsFactory] - Automatic flush during beforeCompletion(): disabled
+2015-01-20 13:16:46,291 INFO [org.hibernate.cfg.SettingsFactory] - Automatic session close at end of transaction: disabled
+2015-01-20 13:16:46,291 INFO [org.hibernate.cfg.SettingsFactory] - JDBC batch size: 40
+2015-01-20 13:16:46,291 INFO [org.hibernate.cfg.SettingsFactory] - JDBC batch updates for versioned data: disabled
+2015-01-20 13:16:46,291 INFO [org.hibernate.cfg.SettingsFactory] - Scrollable result sets: enabled
+2015-01-20 13:16:46,291 INFO [org.hibernate.cfg.SettingsFactory] - JDBC3 getGeneratedKeys(): disabled
+2015-01-20 13:16:46,291 INFO [org.hibernate.cfg.SettingsFactory] - JDBC result set fetch size: 60
+2015-01-20 13:16:46,291 INFO [org.hibernate.cfg.SettingsFactory] - Connection release mode: auto
+2015-01-20 13:16:46,292 INFO [org.hibernate.cfg.SettingsFactory] - Maximum outer join fetch depth: 2
+2015-01-20 13:16:46,292 INFO [org.hibernate.cfg.SettingsFactory] - Default batch fetch size: 8
+2015-01-20 13:16:46,292 INFO [org.hibernate.cfg.SettingsFactory] - Generate SQL with comments: disabled
+2015-01-20 13:16:46,292 INFO [org.hibernate.cfg.SettingsFactory] - Order SQL updates by primary key: enabled
+2015-01-20 13:16:46,292 INFO [org.hibernate.cfg.SettingsFactory] - Order SQL inserts for batching: disabled
+2015-01-20 13:16:46,292 INFO [org.hibernate.cfg.SettingsFactory] - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-01-20 13:16:46,293 INFO [org.hibernate.hql.ast.ASTQueryTranslatorFactory] - Using ASTQueryTranslatorFactory
+2015-01-20 13:16:46,293 INFO [org.hibernate.cfg.SettingsFactory] - Query language substitutions: {}
+2015-01-20 13:16:46,293 INFO [org.hibernate.cfg.SettingsFactory] - JPA-QL strict compliance: disabled
+2015-01-20 13:16:46,293 INFO [org.hibernate.cfg.SettingsFactory] - Second-level cache: enabled
+2015-01-20 13:16:46,293 INFO [org.hibernate.cfg.SettingsFactory] - Query cache: disabled
+2015-01-20 13:16:46,293 INFO [org.hibernate.cfg.SettingsFactory] - Cache provider: org.hibernate.cache.NoCacheProvider
+2015-01-20 13:16:46,294 INFO [org.hibernate.cfg.SettingsFactory] - Optimize cache for minimal puts: enabled
+2015-01-20 13:16:46,294 INFO [org.hibernate.cfg.SettingsFactory] - Structured second-level cache entries: disabled
+2015-01-20 13:16:46,297 INFO [org.hibernate.cfg.SettingsFactory] - Statistics: disabled
+2015-01-20 13:16:46,297 INFO [org.hibernate.cfg.SettingsFactory] - Deleted entity synthetic identifier rollback: disabled
+2015-01-20 13:16:46,297 INFO [org.hibernate.cfg.SettingsFactory] - Default entity-mode: pojo
+2015-01-20 13:16:46,297 INFO [org.hibernate.cfg.SettingsFactory] - Named query checking : enabled
+2015-01-20 13:16:46,311 INFO [org.hibernate.impl.SessionFactoryImpl] - building session factory
+2015-01-20 13:16:46,540 INFO [org.hibernate.impl.SessionFactoryObjectFactory] - Not binding factory to JNDI, no JNDI name configured
+2015-01-20 13:16:46,555 INFO [org.springframework.orm.hibernate3.HibernateTransactionManager] - Using DataSource [org.apache.commons.dbcp.BasicDataSource@1922f46] of Hibernate SessionFactory for HibernateTransactionManager

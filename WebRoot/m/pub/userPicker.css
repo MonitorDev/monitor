@@ -1,0 +1,7 @@
+
+
+.selected_result{position:relative;overflow:hidden;display:inline-block;}
+.selected_item{position:relative;text-indent : 5px;margin : 0px 7px 10px 0px;width:42px;padding-right : 24px;white-space : nowrap;float : left;height : 26px;line-height:26px;word-break : normal;border-radius : 2px;background-clip : padding-box;}
+.select_item{position:relative;margin : 0px 7px 10px 0px;padding-right : 24px;width:32px;white-space : nowrap;float : left;height : 26px;line-height:26px;word-break : normal;border-radius : 2px;background-clip : padding-box;}
+.selected_item_close{BACKGROUND: url(img/x16/ulclose.gif) no-repeat center; width:24px;height:26px;overflow:hidden;position:absolute;top:0px;right:0px;}
+.itask_bg_gray {background-color:rgb(221,221,221);}

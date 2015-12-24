@@ -1,0 +1,41 @@
+/* for ie6 */
+
+/* arrow */
+.f-arw{float:left;display:inline-block;width:15px;height:15px;overflow:hidden;font-size:12px}
+.f-arw i{display:inline-block;width:15px;height:17px;overflow:hidden;font:normal 16px/18px simsun;margin-top:-1px}
+.f-arw-b1{display:inline-block;border:0;width:7px;height:4px;overflow:hidden;margin:9px 0 0 2px;vertical-align:middle}
+.f-arw-b1 .f-arw{margin:-11px 0 0 -4px}
+.f-arw-b2{display:inline-blockborder:0;;width:9px;height:5px;overflow:hidden;margin:7px 0 0 3px;}
+.f-arw-b2 .f-arw{margin:-10px 0 0 -3px}
+.f-arw-b3{display:inline-block;border:0;width:11px;height:6px;overflow:hidden;vertical-align:middle;}
+.f-arw-b3 .f-arw{margin:-9px 0 0 -2px}
+.f-arw-b4{display:inline-block;border:0;width:13px;height:7px;overflow:hidden;vertical-align:middle;}
+.f-arw-b4 .f-arw{margin:-8px 0 0 -1px}
+
+.f-arw-t1{display:inline-block;border:0;width:7px;height:5px;overflow:hidden;vertical-align:middle;}
+.f-arw-t1 .f-arw{margin:0 0 0 -4px;}
+.f-arw-t2{display:inline-block;border:0;width:9px;height:6px;overflow:hidden;vertical-align:middle;}
+.f-arw-t2 .f-arw{margin:0 0 0 -3px;}
+.f-arw-t3{display:inline-block;border:0;width:11px;height:6px;overflow:hidden;vertical-align:middle;}
+.f-arw-t3 .f-arw{margin:0 0 0 -2px;}
+.f-arw-t4{display:inline-block;border:0;width:13px;height:7px;overflow:hidden;vertical-align:middle;}
+.f-arw-t4 .f-arw{margin:0 0 0 -1px;}
+
+.f-arw-r1{display:inline-block;border:0;width:4px;height:7px;overflow:hidden;margin:9px 0 0 2px}
+.f-arw-r1 .f-arw{margin:-3px 0 0 -11px}
+.f-arw-r2{display:inline-block;border:0;width:5px;height:9px;overflow:hidden;}
+.f-arw-r2 .f-arw{margin:-2px 0 0 -10px;}
+.f-arw-r3{display:inline-block;border:0;width:6px;height:11px;overflow:hidden;}
+.f-arw-r3 .f-arw{margin:-1px 0 0 -9px;}
+.f-arw-r4{display:inline-block;border:0;width:7px;height:13px;overflow:hidden;}
+.f-arw-r4 .f-arw{margin:0 0 0 -8px;}
+
+.f-arw-l1{display:inline-block;border:0;width:4px;height:7px;overflow:hidden;}
+.f-arw-l1 .f-arw{margin:-5px 0 0 0;}
+.f-arw-l2{display:inline-block;border:0;width:5px;height:9px;overflow:hidden;}
+.f-arw-l2 .f-arw{margin:-4px 0 0 0;}
+.f-arw-l3{display:inline-block;border:0;width:6px;height:11px;overflow:hidden;}
+.f-arw-l3 .f-arw{margin:-3px 0 0 0;}
+.f-arw-l4{display:inline-block;border:0;width:7px;height:13px;overflow:hidden;}
+
+.o-wstab-plus .f-arw-b1 .f-arw{visibility:hidden}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<!-- 公共部分 登陆主页 -->
+	<bean name="/index.sp"
+		class="com.rongji.express.declare.pub.controller.IndexController">
+		<property name="methodNameResolver" ref="paramResolver" />
+	</bean>
+	<!-- 公共部分 登陆页 -->
+	<bean name="/login.sp"
+		class="com.rongji.express.declare.pub.controller.LoginController">
+		<property name="methodNameResolver" ref="paramResolver" />
+	</bean>
+	
+	<!-- 舱单申报 -->
+	<bean name="/manifest.sp"
+		class="com.rongji.express.declare.manifest.controller.ManifestController">
+		<property name="methodNameResolver" ref="paramResolver" />
+	</bean>
+	
+	<!-- 报单申报 -->
+	<bean name="/formDeclare.sp"
+		class="com.rongji.express.declare.formDeclare.controller.FormDeclareController">
+		<property name="methodNameResolver" ref="paramResolver" />
+	</bean>
+	<!-- 报单申报 -->
+	<bean name="/consignee.sp"
+		class="com.rongji.express.declare.formDeclare.controller.ConsigneeController">
+		<property name="methodNameResolver" ref="paramResolver" />
+	</bean>
+	
+	<!-- 转关单申报 -->
+	<bean name="/transformDeclare.sp"
+		class="com.rongji.express.declare.transformDeclare.controller.TransformDeclareController">
+		<property name="methodNameResolver" ref="paramResolver" />
+	</bean>
+	
+	<!-- 通知公告 -->
+	<bean name="/notice.sp"
+		class="com.rongji.express.declare.notice.controller.NoticeController">
+		<property name="methodNameResolver" ref="paramResolver" />
+	</bean>
+	
+	<!-- 系统管理 -->
+	<bean name="/system.sp"
+		class="com.rongji.express.declare.system.controller.SystemController">
+		<property name="methodNameResolver" ref="paramResolver" />
+	</bean>
+	<bean name="/sysArg.sp"
+		class="com.rongji.express.declare.system.controller.SysArgController">
+		<property name="methodNameResolver" ref="paramResolver" />
+	</bean>
+	<!-- 报文映射维护 -->
+	<bean name="/msgMapper.sp"
+		class="com.rongji.express.commons.sys.controller.MessageMapperController">
+		<property name="methodNameResolver" ref="paramResolver" />
+	</bean>
+	
+	<!-- 快件企业管理 -->
+	<bean name="/enter.sp"
+	     class="com.rongji.express.commons.enterprise.controller.EnterpriseController">
+	     <property name = "methodNameResolver"  ref="paramResolver"/>
+	</bean>
+	
+	<!-- 报检员管理 -->
+	<bean name="/inspector.sp"
+	     class="com.rongji.express.commons.enterprise.controller.InspectorController">
+	     <property name = "methodNameResolver"  ref="paramResolver"/>
+	</bean>
+	
+	<!-- 收件人黑名单 -->
+	<bean name="/recipient.sp"
+	     class="com.rongji.express.commons.enterprise.controller.RecipientController">
+	     <property name = "methodNameResolver"  ref="paramResolver"/>
+	</bean>
+	<!-- 上传 -->
+	<bean name="/sysData.sp"
+		class="com.rongji.express.commons.sys.controller.SysDataController">
+		<property name="methodNameResolver" ref="paramResolver" />
+	</bean>
+</beans>

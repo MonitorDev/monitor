@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	
+	<!-- 系统管理 
+	<bean name="/sysMenu.sp"
+		class="com.rongji.express.commons.sys.controller.SysMenuController">
+		<property name="methodNameResolver" ref="paramResolver" />
+	</bean>-->
+	
+	<!-- 选项值 
+	<bean name="/candidate.sp"
+		class="com.rongji.express.commons.controller.CandidateController">
+		<property name="methodNameResolver" ref="paramResolver" />
+	</bean>-->
+	
+</beans>

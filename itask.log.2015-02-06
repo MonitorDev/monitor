@@ -1,0 +1,10 @@
+2015-02-06 10:41:00,441 ERROR [com.rongji.websiteMonitor.service.ServiceLocator] - 获取指定的Bean对象[thresholdService]的实例失败，请检查配置文件!
+java.lang.NullPointerException
+	at com.rongji.websiteMonitor.service.ServiceLocator.getBean(ServiceLocator.java:47)
+	at com.rongji.websiteMonitor.service.ServiceLocator.getThresholdService(ServiceLocator.java:162)
+	at test.test.main(test.java:99)
+2015-02-06 10:41:25,101 ERROR [com.rongji.websiteMonitor.service.ServiceLocator] - 获取指定的Bean对象[thresholdService]的实例失败，请检查配置文件!
+java.lang.NullPointerException
+	at com.rongji.websiteMonitor.service.ServiceLocator.getBean(ServiceLocator.java:47)
+	at com.rongji.websiteMonitor.service.ServiceLocator.getThresholdService(ServiceLocator.java:162)
+	at test.test.main(test.java:99)

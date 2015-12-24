@@ -1,0 +1,309 @@
+/*
+ *	XP style css
+ *	---------------------------------
+ *	XP风格的样式。这是系统的默认风格。
+ *	---------------------------------
+ *	在 CSS1Compat 模式下获得最佳效果。
+ *	---------------------------------
+ *
+ *  author : Chen MingYuan
+ *  for iTASK 5.0
+ *  Copyright (c) 2005 - 2006 iTASK Team
+ *
+ *   created : 2005-9-8
+ *  modified : 2007-6-20
+ *
+ */
+/* background color */
+.bg-deep{background-color: #9fd7f2}
+.bg-mid{background-color: #a6e0fe}
+.bg-low{background-color: #e6f0fc}
+
+/* border style */
+.bd-deep {border: 1px solid #9fd7f2}
+.bd-mid {border: 1px solid #a6e0fe}
+.bd-low{border: 1px solid #e0e0e0}
+
+.bd-mod{border:1px solid #b8c0cc}
+.bg-mod{background:#f3f3f3}
+.bd-title{border:1px solid #d7e1eb}
+.bg-title{background:#eff5fa}
+.bg-nav{background:#ffffff}  /*导航区*/
+.bg-list{background:#ffffff} /*数据列表区*/
+.bg-edit{background:#ffffff} /*编辑表单区*/
+.bd-menu{border:1px solid #c2c2c2}
+.bg-search{background:#f6f6f6}
+
+.menu_row{}
+.menu_row:hover{background:#d7e1ea;border-color:#c6cfd8}
+.menu_row:hover .ln{background:#d7e1ea}
+
+
+/* fx background */
+.o-menu .om-tl,.o-menu .om-tc,.o-menu .om-tr,.o-menu .om-bl,.o-menu .om-bc,.o-menu .om-br,.o-office .l,.o-office .r,.o-office .c,.o-office .p,.o-office.grp .grr .r .rbg,.o-page .l,.o-page .r,.o-page .c,.o-classic-m .l,.o-classic-m .c,.o-classic-m .r,.o-classic-m .p,.o-classic-b .l,.o-classic-b .c,.o-classic-b .r,.o-classic-b .p,.o-topmenu .l,.o-topmenu .r,.o-topmenu .c,.o-topmenu .p
+	{
+	background-image: url(g/fx.png)
+}
+
+/* Fn.Menu */
+.o-menu .om-mc {background-color: #fff}
+.o-menu .hv {background-color: #cde3f3}
+
+/* wstab */
+.o-wstab {font-size:12px;color:#fff;text-align:center;}
+.o-wstab .l,.o-wstab .r{display:none}
+.o-wstab .c {width:90px;height:80px;padding:0;overflow: hidden}
+.o-wstab .i-c {float: none;height: 50px;padding: 0;margin-top: 4px;overflow: hidden}
+.o-wstab .tt {	float: none;height: 18px;line-height: 18px;text-align: center}
+.o-wstab .x {margin: -72px 0 0 70px;visibility: hidden;height:16px;line-height:1;}
+.o-wstab .x .i-c {width: 12px;height: 16px;}
+.o-wstab .x .i-x {width: 12px;height: 12px;background: url(../../../img/b/i.png) -2px -2px;}
+.o-wstab .x .i-x.z-hv {	background-position: -19px -2px}
+/* hover */
+.o-wstab.z-hv {	background:url(g/wstab.png) no-repeat right bottom}
+.o-wstab.z-hv .x {visibility: visible}
+
+/* focus */
+.o-wstab.z-on{background:url(g/wstab.png) no-repeat 0 bottom}
+
+/* plus */
+.o-plus .o-wstab .i-c-g {width: 32px;height: 32px;margin-top: -1px;background: url(../../../img/b/i.png) no-repeat -396px -121px}
+.o-wstab-lt,.o-wstab-rt {width: 0;overflow: hidden}
+/* helper */
+.o-wstab-bd {border: 1px solid #4088cd;}
+.o-wstab-bg {background: 0 -100px}
+.o-wstab-scr {float:right;}
+
+
+.o-office{font-size:14px;line-height:2}
+
+.bg-o-head {
+	box-shadow: 0 0 4px #aaa;
+}
+
+.bg-o-modtab {
+	background: #f0f5fa
+}
+
+.o-start-menu {
+	font-size: 14px
+}
+
+.o-start-menu .c,.o-start-menu .om-c,.o-start-menu .i-c,.o-start-menu .i-c.om-ic,.o-start-menu .tt,.o-start-menu .om-tt,.o-start-menu .m,.o-start-menu .om-m
+	{
+	height: 42px;
+	line-height: 42px
+}
+
+.o-start-menu .o-p {
+	margin-left: 0;
+	margin-right: 0
+}
+
+.o-start-menu .o-hr {
+	border-top: 1px solid #d3dade;
+	border-bottom: 1px solid #fff
+}
+
+.ie11 .o-start-menu .o-hr {
+	border-top-color: #d3dade;
+	border-bottom-color: #fff
+}
+
+/*  VM: mx  */
+.mx-f .mxtbl {
+	background-color: #eef3fa;
+}
+
+.mx .mx-bg {
+	background-color: #f9f8f7
+}
+
+.mx .mxtab-bg {
+	background-color: #deecfd
+}
+
+.trg_selector a.imgbx_opt:hover {
+	background-color: #b3cdf7;
+}
+
+/* form element */
+.mx_text,.mx_textarea,.txsel,.bd-input {
+	border-color: #b5b8c8
+}
+
+.txsel-link U {
+	color: #3a4c80
+}
+
+.bd-text {
+	border: 1px solid #b5b8c8;
+}
+
+.dlg-box {
+	background-color: #fff
+}
+
+.dlg-progress ._bg {
+	background: url(g/progress-bg.gif) repeat-x center;
+}
+
+/* portal */
+.pt .top-l,.pt .top-c,.pt .top-f,.pt .top-r,.pt .bt-l,.pt .bt-c,.pt .bt-r
+	{
+	background-image: url(g/pt.gif);
+}
+
+.pt .msg {
+	border-left: 1px solid #b2d1f0;
+	border-right: 1px solid #b2d1f0;
+	padding: 8px 8px 0 8px;
+}
+
+/* top button */
+.page-bg {
+	background: url(g/page-bg.png);
+}
+
+/* sidebar  */
+.i-sdbar-fav,.i-sdbar-msg,.i-sdbar-txl,.i-sdbar-tsk {
+	background-image: url(g/i.png)
+}
+
+.dlg-std .i-dlg-x {background: url(g/i.png) -218px 0}
+.dlg-std .i-dlg-max {background: url(g/i.png) -190px 0}
+.dlg-std .i-dlg-ori {background: url(g/i.png) -159px 0}
+
+/* system nav */
+.m-tt-sysnav {
+	margin-top: 16px;
+	height: 20px;
+	padding: 15px 0 0 60px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.f-tthr .hr {
+	background-image: url(g/hr.png)
+}
+
+
+.tt-1 .o-path{height:48px;border:1px solid transparent;border-width:0 1px;line-height:46px}
+.tt-1 .o-path.z-hv,.tt-1 .o-path.ctx{border-color:#95bfdf;background-color:transparent}
+.tt-1 .o-path .c{border:1px solid transparent;height:46px;}
+.tt-1 .o-path.z-hv .c{border-color:#fff;}
+.tt-1 .o-path.z-hv .p,.tt-1 .o-path.ctx .p{background:#95bfdf;}
+.tt-1 .o-path .m,.tt-1 .o-path .p{border-left:1px solid transparent}
+.tt-1 .o-path.z-hv .m,.tt-1 .o-path.z-hv .p,.tt-1 .o-path.ctx .p{border-left:1px solid #fff}
+.tt-1 .o-path.z-hv .m:hover{background-color:transparent}
+.tt-1 .o-path.ctx .c{border-color:transparent;border-bottom-color:#ccc}
+
+
+/* layout-1 */
+.layout-1 {	background:#f3f3f3}
+.layout-1 .ly-top {	background: url(g/1-bg-top.png) repeat-x 0 bottom;}
+.layout-1 .ly-bottombar {background:#e5e6e8;border-top:1px solid #c2c2c2;}
+
+.layout-1 .bg-low{background:#f6f6f6}
+.layout-1 .bd-gray{boder-color:#d2d2d2}
+.layout-1 .bd-title,.layout-1 .bd-mod{border-color:#c2c2c2}
+.layout-1 .bg-title,.layout-1 .bg-nav,.layout-1 .bg-list,.layout-1 .bg-edit,.layout-1 .bg-o-modtab{background-color:#f3f3f3}
+
+.layout-1 .dlg-std .d-tl,.layout-1 .dlg-std .d-tr,.layout-1 .dlg-std .d-tc,
+.layout-1 .o-office.ma .l,.layout-1 .o-office.ma .r,.layout-1 .o-office.ma .c,
+.layout-1 .dlg-std .d-foot{background-image:url(g/1-fx.png)}
+
+.layout-1 .o-office.ma.z-hv .l{background-position:0 -577px}
+.layout-1 .o-office.ma.z-hv .r{background-position:right -577px}
+.layout-1 .o-office.ma.z-hv .c{background-position:0 -608px}
+.layout-1 .o-office.ma .l,.layout-1 .o-office.ma.z-dn .l{background-position:0 -515px}
+.layout-1 .o-office.ma .r,.layout-1 .o-office.ma.z-dn .r{background-position:right -515px}
+.layout-1 .o-office.ma .c,.layout-1 .o-office.ma.z-dn .c{background-position:0 -546px}
+.layout-1 .o-office.ctx .l,.layout-1 .o-office.ctx .r,.layout-1 .o-office.ctx .c{background-image: url(g/fx.png)}
+.layout-1 .o-office.ctx .l{background-position:0 -279px}
+.layout-1 .o-office.ctx .r{background-position:right -279px}
+.layout-1 .o-office.ctx .c,.layout-1 .o-office.grl.ctx .l,.layout-1 .o-office.grr.ctx .r{background-position:0 -313px}
+
+
+.layout-1 .dlg-std .d-foot{background-position:0 -699px;background-repeat:repeat-x;background-color:#e5e6e8}
+
+.layout-1 .dlg-msg .d-t{background:url(g/1-fx.png) repeat-x}
+
+/* layout-2 */
+.layout-2 {background: #e6f0ff}
+.layout-2 .ly-top {background: url(g/2-bg-top.png) repeat-x 0 bottom;}
+.layout-2 .ly-top.z-s {background: url(g/2-bg-top-s.png) repeat-x 0 bottom;}
+.layout-2 .ly-bottombar {background: #dfeafa;border-top: 1px solid #b8c0cc;}
+
+.layout-2 .o-wstab .l,.layout-2 .o-wstab .r,.layout-2 .o-wstab .c,
+.layout-2 .dlg-std .d-tl,.layout-2 .dlg-std .d-tr,.layout-2 .dlg-std .d-tc,.layout-2 .dlg-std .d-foot{background-image: url(g/2-fx.png)}
+.layout-2 .bd-low{border: 1px solid #d1dae9}
+.layout-2 .bg-nav,.layout-2 .bg-edit{background-color:#eff5fa}
+
+.layout-2 .bg-mod{background:#e2edfc}
+.layout-2 .bg-search{background:#e6f0fc}
+
+.layout-2 .dlg-std .d-foot{background-position:0 -699px;background-repeat:repeat-x;background-color:#e5ecf2}
+
+.layout-2 .dlg-msg .d-t{background:url(g/2-fx.png) repeat-x}
+
+.layout-2 .menu_row:hover{background:#ccdcf3;border-color:#bbcce0}
+.layout-2 .menu_row:hover .ln{background:#ccdcf3}
+
+
+/* layout-3 */
+.layout-3 {
+	
+}
+
+.layout-3 .ly-bg1 {
+	background: #58aee9
+}
+
+.layout-3 .ly-top {
+	background: url(g/3-bg-top.png) repeat-x
+}
+
+.layout-3 .o-wstab .l,.layout-3 .o-wstab .r,.layout-3 .o-wstab .c,.layout-3 .dlg-std .d-tl,.layout-3 .dlg-std .d-tr,.layout-3 .dlg-std .d-tc
+	{
+	background-image: url(g/3-fx.png)
+}
+
+.layout-3 .o-classic-m .on .l {
+	background-image: url(g/3-fx.png);
+	background-position: 0 -320px
+}
+
+.layout-3 .o-classic-m .on .r {
+	background-image: url(g/3-fx.png);
+	background-position: right -320px
+}
+
+.layout-3 .o-classic-m .on .c {
+	background-image: url(g/3-fx.png);
+	background-position: 0 -352px
+}
+
+.layout-3 .o-classic-m .on.hv .l {
+	background-position: 0 -384px
+}
+
+.layout-3 .o-classic-m .on.hv .r {
+	background-position: right -384px
+}
+
+.layout-3 .o-classic-m .on.hv .c {
+	background-position: 0 -416px
+}
+
+.layout-3 .o-classic-m .on.dn .l {
+	background-position: 0 -448px
+}
+
+.layout-3 .o-classic-m .on.dn .r {
+	background-position: right -448px
+}
+
+.layout-3 .o-classic-m .on.dn .c {
+	background-position: 0 -480px
+}

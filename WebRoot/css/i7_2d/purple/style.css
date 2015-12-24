@@ -1,0 +1,176 @@
+/*
+ *	XP style css
+ *	---------------------------------
+ *	XP风格的样式。这是系统的默认风格。
+ *	---------------------------------
+ *	在 CSS1Compat 模式下获得最佳效果。
+ *	---------------------------------
+ *
+ *  author : Chen MingYuan
+ *  for iTASK 5.0
+ *  Copyright (c) 2005 - 2006 iTASK Team
+ *
+ *   created : 2005-9-8
+ *  modified : 2007-6-20
+ *
+ */
+
+
+/* background color */
+.bg-deep {background-color:#d99de8}
+.bg-mid {background-color:#e5bdef}
+.bg-low {background-color:#f7dffc}
+
+/* border style */
+.bd-deep {border:1px solid #d99de8}
+.bd-mid {border:1px solid #e5bdef}
+.bd-low {border:1px solid #f7dffc}
+
+
+.bg-module{background:#f2f2f2}
+.bg-module .vi-l.hv{background:#e2e2e2}
+
+.bg-nav{background:url(g/bg-nav.png) repeat-x 0 0 rgb(242,242,242)}
+.tt-nav{line-height:60px}
+.tt-main{line-height:60px}
+
+/* tree */
+.bg-nav .tree{border-radius:0;}
+.bg-nav .tree-t{margin-left:2px;padding:0 3px 0 2px;vertical-align:middle}
+.bg-nav .tree:hover,.bg-nav .tree.z-menu{background-color:#e0e0e0;border-color:transparent;}
+.bg-nav .tree.z-on,.bg-nav .tree.z-on:hover,.bg-nav .tree.z-on.z-menu{border-color:#d9d9d9;border-right:0;background-color:#d9d9d9;font-weight:bold}
+
+
+/* fx background */
+.o-menu .om-tl,.o-menu .om-tc,.o-menu .om-tr,.o-menu .om-bl,.o-menu .om-bc,.o-menu .om-br,
+.o-office .l,.o-office .r,.o-office .c,.o-office .p,.o-office .grp .grr .r .rbg,
+.o-page .l,.o-page .r,.o-page .c,
+.o-classic-m .l,.o-classic-m .c,.o-classic-m .r,.o-classic-m .p,
+.o-classic-b .l,.o-classic-b .c,.o-classic-b .r,.o-classic-b .p,
+.o-topmenu .l,.o-topmenu .r,.o-topmenu .c,.o-topmenu .p
+	{background-image:url(g/fx.png)}
+
+/* Fn.Menu */
+.o-menu .om-mc{background-color:#fff}
+.o-menu .hv{background-color:#e2e5e9}
+
+.o-sdtab .o-l{margin:0;}
+.o-sdtab .on{background:#d7d7d7;}
+.bg-o-sdtab{background:#f9f8f7}
+
+.dlg-std{border-radius:2px 2px 3px 3px}
+.dlg-std .d-bg-top, .dlg-std .d-top{border-radius:0}
+.dlg-std .d-bl,.dlg-std .d-br,.dlg-std .d-bc,.dlg-std .d-foot{background-image:url(g/tt-bg.png)}
+
+
+/* wstab */
+.o-wstab{margin-top:10px;font-size:12px;color:#fff;text-align:center}
+.o-wstab .l{width:3px;height:70px;background-position:0 99px}
+.o-wstab .r{width:3px;height:70px;background-position:0 99px}
+.o-wstab .c{width:84px;height:70px;padding:0;background-position:0 99px;overflow:hidden}
+.o-wstab .it{width:84px;height:75px;padding-top:8px;background:url(g/i.png) no-repeat -78px 23px}
+.o-wstab .i-c{float:none;height:45px;padding:0;margin-top:0;overflow:hidden}
+.o-wstab .i-c-g{margin-top:-3px}
+.o-wstab .tt{float:none;height:20px;line-height:20px;text-align:center}
+.o-wstab .x{margin:-66px 0 0 70px;visibility:hidden;}
+.o-wstab .x .i-c{width:12px;height:12px;padding:3px 0 0 0;}
+.o-wstab .x .i-x{width:12px;height:12px;background:url(../../../img/b/i.png) -2px -2px}
+.o-wstab .x .i-x.over{background-position:-19px -2px}
+.o-wstab .l,.o-wstab .r,.o-wstab .c{background-image:url(g/1-fx.png)}
+/* hover */
+.o-wstab.z-hv .x{visibility:visible}
+/* on focus */
+.o-wstab.z-hv .l,.o-wstab.z-on .l{background-position:0 0}
+.o-wstab.z-hv .r,.o-wstab.z-on .r{background-position:right 0}
+.o-wstab.z-hv .c,.o-wstab.z-on .c{background-position:0 -71px}
+/* plus */
+.o-plus .o-wstab .i-c-g{width:32px;height:32px;margin-top:-1px;background:url(../../../img/b/i.png) -396px -121px}
+.o-wstab-lt,.o-wstab-rt{width:0;overflow:hidden}
+
+
+/* helper */
+.o-wstab-bd{border:1px solid #4088cd;}
+.o-wstab-bg{background:0 -100px}
+.o-wstab-scr{float:right;}
+.o-wstab-scr a{color:#fff;display:inline-block;margin:13px 5px 0 0;}
+
+.o-linetab .o-l.hv,.o-linetab .o-l.on{border-color:#d16ff2}
+
+
+.o-start-menu{font-size:14px}
+.o-start-menu .c,.o-start-menu .om-c,.o-start-menu .i-c,.o-start-menu .i-c.om-ic,.o-start-menu .tt,.o-start-menu .om-tt,.o-start-menu .m,.o-start-menu .om-m{height:42px;line-height:42px}
+.o-start-menu .o-p{margin-left:0;margin-right:0}
+.o-start-menu .o-hr{border-top:1px solid #d3dade;border-bottom:1px solid #fff}
+.ie11 .o-start-menu .o-hr{border-top-color:#d3dade;border-bottom-color:#fff}
+
+
+/* tree */
+.tree:hover,.tree-cmd,.tree.z-menu{border-color:#fdf3ff;background-color:#fdf3ff}
+.tree.z-on,.tree.z-on:hover,.tree.z-on.z-menu{border-color:#f6e3fc;background-color:#f6e3fc}
+
+
+/*  VM: lb  */
+.lb .tbl_bg-odd .tr1{background-color:#fffbf7}
+.lb .row-hv{background:#fdf3ff}
+.lb .row-checked,.lb .row-on,.lb .row-on > :first-child{background-color:#f6e3fc}
+
+.o-start-menu .ctx{background-color:#f7dffc}
+.o-start-menu .on{background-color:#d99de8}
+
+
+
+/*  VM: mx  */
+.trg_selector a.imgbx_opt:hover {background-color:#b3cdf7;}
+ 
+/* form element */
+.mx_text,.mx_textarea,.txsel,.txsel-link,.bd-input { border-color:#b5b8c8; }
+.txsel-link U { color:#3a4c80; }
+.bd-text{border:1px solid #b5b8c8;}
+
+
+.dlg-progress ._bg{background:url(g/progress-bg.gif) repeat-x center;}
+
+
+/* portal */
+.pt .top-l,.pt .top-c,.pt .top-f,.pt .top-r,.pt .bt-l,.pt .bt-c,.pt .bt-r{background-image:url(g/pt.gif);}
+.pt .msg{border-left:1px solid #b2d1f0;border-right:1px solid #b2d1f0;padding:8px 8px 0 8px;}
+
+.page-bg{background:url(g/page-bg.png);}
+
+
+/* sidebar  */
+.i-sdbar-fav,.i-sdbar-msg,.i-sdbar-txl,.i-sdbar-tsk{background-image:url(g/i.png)}
+
+.i-dlg-x{background:url(g/i.png) -218px 0}
+.i-dlg-x.over{background-position:-218px -17px}
+.i-dlg-max{background:url(g/i.png) -190px 0}
+.i-dlg-max.over{background-position:-190px -17px}
+.i-dlg-ori{background:url(g/i.png) -159px 0}
+.i-dlg-ori.over{background-position:-159px -17px}
+
+
+/* system nav */
+.m-tt-sysnav{margin-top:16px;height:20px;padding:15px 0 0 60px;font-size:14px;font-weight:bold;}
+
+
+.f-tthr .hr{background-image:url(g/hr.png)}
+
+
+/* layout-1 */
+.layout-1 .ly-bg{background:url(g/1-bg.png)}
+.layout-1 .ly-top{background:url(g/1-bg-top.png) repeat-x}
+.layout-1 .ly-bottom{background:url(g/1-top.png) no-repeat}
+
+.layout-1 .o-wstab .l,.layout-1 .o-wstab .r,.layout-1 .o-wstab .c,
+.layout-1 .dlg-std .d-tl,.layout-1 .dlg-std .d-tr,.layout-1 .dlg-std .d-tc{background-image:url(g/1-fx.png)}
+.layout-1 .dlg-std .d-tc-r{background:url(g/1-dlg-std-top.png) no-repeat right 1px}
+
+
+/* layout-2 */
+.layout-2 .ly-bg{background:url(g/2-bg.png)}
+.layout-2 .ly-top{background:url(g/2-bg-top.png) repeat-x}
+.layout-2 .ly-bottom{background:url(g/2-top.png) no-repeat}
+
+.layout-2 .o-wstab .l,.layout-2 .o-wstab .r,.layout-2 .o-wstab .c,
+.layout-2 .dlg-std .d-tl,.layout-2 .dlg-std .d-tr,.layout-2 .dlg-std .d-tc{background-image:url(g/2-fx.png)}
+.layout-2 .dlg-std .d-tc-r{background:url(g/2-dlg-std-top.png) no-repeat right 1px}

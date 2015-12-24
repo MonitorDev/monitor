@@ -1,0 +1,45 @@
+/* ÉÏ´«²å¼þ */
+
+.pl-fileupload-pop{color:#333;height:100%;cursor:pointer}
+.pl-fileupload-pop.z-hv{text-decoration:underline}
+.pl-fileupload-pop .i-c{height:100%;}
+
+.pl-fileupload .ipt-file{width:100%;height:26px;cursor:pointer;font-size:99px;cursor:pointer;}
+.pl-fileupload.z-ds .ipt-file{display:none}
+.pl-fileupload-cont{position:absolute;top:0;left:0;right:0;bottom:0}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	.pl-fileupload .ipt-file{font-size:0;}
+}
+.pl-fileupload-loader{float:left}
+.pl-fileupload-loader-small{position:relative;height:26px;line-height:26px;border:1px solid rgb(225,225,225);margin:3px 6px 3px 0px;border-radius:3px;}
+.pl-fileupload-loader-small ._gut{position:relative;height:100%;}
+.pl-fileupload-loader-small .i-c{float:left;height:100%;width:32px}
+.pl-fileupload-loader-small ._bar{position:absolute;height:100%;left:0;right:0;background:#f6f7f8}
+.pl-fileupload-loader-small ._prg{width:0;height:100%;background:#f6f7f8}
+.pl-fileupload-loader-small.z-prg ._bar{background:#fff}
+.pl-fileupload-loader-small.z-prg ._prg{background:#e4f8ff}
+.pl-fileupload-loader-small ._tit{float:left;height:100%;margin-right:10px}
+.pl-fileupload-loader-small ._op{float:left;}
+.pl-fileupload-loader-small ._btnwrp{float:left;}
+.pl-fileupload-loader-small ._btn{float:left;margin-right:6px}
+
+.pl-fileupload-loader-medium{position:relative;margin:3px 6px 3px 0px;border-radius:3px;}
+.pl-fileupload-loader-medium ._gut{float:left}
+.pl-fileupload-loader-medium .i-c{float:left;height:42px;margin-right:10px}
+.pl-fileupload-loader-medium ._tit{float:left;line-height:22px}
+.pl-fileupload-loader-medium ._tit a{font-size:14px;}
+.pl-fileupload-loader-medium ._tit span{color:gray}
+.pl-fileupload-loader-medium ._bar{position:absolute;height:1px;left:0;right:0;bottom:24px;background:#d9d9d9}
+.pl-fileupload-loader-medium ._prg{width:0;height:100%;background:#d9d9d9}
+.pl-fileupload-loader-medium.z-prg ._prg{background:#42B0E6}
+.pl-fileupload-loader-medium ._op{clear:both;height:24px;line-height:2}
+.pl-fileupload-loader-medium ._btnwrp{position:absolute;right:0;bottom:0}
+.pl-fileupload-loader-medium ._btn{float:left;margin-right:6px}
+
+
+.pl-imageupload{margin:3px 0}
+.pl-imageupload .btn-image{background:url(g/image_91x25.png) no-repeat}
+.pl-imageupload .btn-file{background:url(g/file_91x25.png) no-repeat}
+.pl-imageupload .btn-image,.pl-imageupload .btn-file,.pl-imageupload .ipt-file{width:91px;height:25px;overflow:hidden}
+.pl-imageupload .ipt-file{font-size:99px}
+.pl-imageupload .btn-image:hover,.pl-imageupload .btn-file:hover{background-position:0 -25px}

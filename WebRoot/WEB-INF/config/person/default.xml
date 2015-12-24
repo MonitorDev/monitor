@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="GBK"?>
+<!-- the default personal config file -->
+<person>
+  <!-- the page style -->
+  <pageStyle>default</pageStyle>
+  <!--  -->
+  <style>VISTA</style>
+  <color>1</color>
+  <!-- the module show in big column -->
+  <moduleBig>freetask,msg,perform</moduleBig>  
+  <!-- the modlue show in small column -->
+  <moduleSmall>resource,search,system,log,personal</moduleSmall>  
+  <!-- news link will chang to CMS module when value is 1 -->
+  <linkCms>0</linkCms>
+  <!-- show in shotcut desktop -->
+  <deskInn>deskAttend,deskNote,deskWeather,deskBirth,deskVote,deskUser</deskInn>
+  <!-- show in folat window -->
+  <deskOut>_nothing_</deskOut>
+  <!-- page rows of resource module -->
+  <resListPageSize>10</resListPageSize>
+  <!-- columns of ressource module -->
+  <resListCols>1</resListCols>
+  <!-- page rows of other -->
+  <rows_per_page>50</rows_per_page>
+  <rows_per_block>15</rows_per_block>
+  <!-- values 0-title,1-content,2-all -->
+  <weekDailyAbstractFlag>0</weekDailyAbstractFlag>
+  <!-- values 0-title,1-content,2-all -->
+  <weekTaskAbstractFlag>0</weekTaskAbstractFlag>
+  <!-- values 0-show last week ,1-show this week -->
+  <weekReportDisplay>1</weekReportDisplay>
+  <!-- values 0-title,1-content,2-all -->
+  <monthDailyAbstractFlag>0</monthDailyAbstractFlag>
+  <!-- values 0-title,1-content,2-all -->
+  <monthTaskAbstractFlag>0</monthTaskAbstractFlag>
+  <autoSaveFlag>0</autoSaveFlag>
+  <autoSaveTimeSpit>60</autoSaveTimeSpit>
+  <autoMsgTimeSpit>20</autoMsgTimeSpit>
+  <tabNum>5</tabNum>
+  <!-- msg will be delete when more then this number -->
+  <autoMsgDeleteMax>500</autoMsgDeleteMax>
+  <!-- show msg box -->
+  <msgBoxDisplay>1</msgBoxDisplay>
+  <!-- values 0-middle 1-left-top 2-top 3-right-top 4-right 5-right-bottom and so on -->
+  <msgShowPosition>5</msgShowPosition>
+  <!-- msg receive define MSGTYPE_MSGMODE MODE 1-ONLINE 2-EMAIL 3-SMS 4-ASS 5-RSS -->
+  <msgReceiveDef>1_1,1_4,2_1,2_4,3_1,3_4,4_1,4_4,5_1,5_4,6_1,6_4,7_1,7_4,8_1,8_4,9_1,9_4,A_1,A_4,B_1,B_4,C_1,C_4,D_1,D_4,2_5,3_5,4_5,5_5,6_5,7_5,8_5,9_5,A_5,B_5,C_5,D_5</msgReceiveDef>
+  <!-- unfinished daily show -->
+  <unFinishedDailyMax>7</unFinishedDailyMax>
+  <!-- remind people to report week work -->
+  <autoWeekReportMsgFlag>0</autoWeekReportMsgFlag>
+  <!-- remind people to examine week work -->
+  <autoWeekExamMsgFlag>1</autoWeekExamMsgFlag>
+  <!-- remind people that week work has been examined -->
+  <autoWeekExamMinuteMsgFlag>1</autoWeekExamMinuteMsgFlag>
+  <!-- remind people to report month work -->
+  <autoMonthReportMsgFlag>0</autoMonthReportMsgFlag>
+  <!-- remind people to examine month work -->
+  <autoMonthExamMsgFlag>1</autoMonthExamMsgFlag>
+  <!-- remind people that month work has been examined -->
+  <autoMonthExamMinuteMsgFlag>1</autoMonthExamMinuteMsgFlag>
+  <!-- msg display mode -->
+  <msgDisMode>0</msgDisMode>
+  <!-- msg display columns -->
+  <msgDisCol>1</msgDisCol>
+  <taskSubTreeType>7</taskSubTreeType>
+  <!-- show oline talk -->
+  <onlineTalkDisplay>1</onlineTalkDisplay>
+  <rssLogType>3</rssLogType><!-- RSS login type 1-check in 2-a text to read 3show in read -->
+  <rssRange>0</rssRange>
+  <!-- 自动保存 0:是 1:否-->
+  <autoSave>1</autoSave>
+  <!-- 自动保存间隔时间 单位为秒 -->
+  <timeSpace>60</timeSpace>
+  <!-- 设置为进入站点管理默认展开到的栏目节点 -->
+  <focusId></focusId>
+  <modules>
+    <email>
+      <accountForSend>0</accountForSend>
+      <saveToSent>1</saveToSent>
+      <serverBackup>0</serverBackup>
+      <receiveSafe>1</receiveSafe>
+      <showNickName>1</showNickName>
+      <replyWithContent>0</replyWithContent>
+      <replySubject>1</replySubject>
+      <newContentDefault>&lt;P&gt;&amp;nbsp;&lt;/P&gt; &lt;P&gt;&amp;nbsp;&lt;/P&gt; &lt;P&gt;&amp;nbsp;&lt;/P&gt; &lt;P&gt;&amp;nbsp;&lt;/P&gt; &lt;P&gt;&amp;nbsp;&lt;/P&gt; &lt;P align=right&gt;您忠实的朋友 {$myname}&lt;/P&gt; &lt;P align=right&gt;{$now}&lt;/P&gt;</newContentDefault>
+    </email>
+  </modules>
+</person>
+

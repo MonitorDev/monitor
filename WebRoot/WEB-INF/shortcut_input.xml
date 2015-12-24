@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<shorcut_input>
+  <class id="comm" name="日常用语">
+    <value>谢谢！</value>
+    <value>对不起！</value>
+    <value>再见！</value>
+    <value>你好！</value>
+  </class>
+  <class id="judg" name="批示意见">
+    <value>同意！</value>
+    <value>拟同意</value>
+    <value>已阅</value>
+    <value>请  审阅</value>
+    <value>问题较多，请先修订！</value>
+    <value>问题较多，拟取消。</value>
+  </class>
+  <class id="face" name="表情符号">
+    <value>ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩⅪⅫ</value>
+    <value>①②③④⑤⑥⑦⑧⑨⑩</value>
+    <value>㈠㈡㈢㈣㈤㈥㈦㈧㈨㈩</value>
+    <value>㎎㎏㎜㎝㎞㎡㏄㏎㏑㏒㏕</value>
+    <value>←↑→↓↖↗↘↙</value>
+    <value>■□▲△▼▽◆◇○◎●★☆♀♂</value>
+  </class>
+</shorcut_input>

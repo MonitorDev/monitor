@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  监控系统的基本参数配置文件
+-->
+<website>
+	<sysbasearg>
+		<!-- 系统调试模式开关 -->
+		<debugMode>true</debugMode>
+		<!-- 用于发送的电子邮件 -->
+		<email>rongjitest@163.com</email>
+	</sysbasearg>
+	
+	
+	<sendarg>
+		<sendUrl>http://userinterface.vcomcn.com/Opration.aspx</sendUrl>
+		<logUrl>http://userinterface.vcomcn.com/GetResult.aspx</logUrl>
+		<userName>rjrj</userName>
+		<pwd>ab8888</pwd>
+		<charset>gbk</charset>
+	</sendarg>
+	
+</website>

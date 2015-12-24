@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<datas> 
+ <ftp> 
+  <ftpUrl>192.168.21.199</ftpUrl>  
+  <ftpPort>21</ftpPort>
+  <ftpAcc>yuliangmei</ftpAcc>
+  <ftpPwd>yuliangmei</ftpPwd>
+  <hSendFolder>customs/send</hSendFolder>
+  <hRecvFolder>customs/recv</hRecvFolder>
+  <ciqSendFolder>ciq/send</ciqSendFolder>
+  <ciqRecvFolder>ciq/recv</ciqRecvFolder>
+ </ftp>  
+ <sso> 
+  <soapUrl>http://59.57.242.46:8002</soapUrl>  
+  <soapKey>2RZ2448R06886TDN</soapKey>  
+  <soapSysCode>EXPRESS</soapSysCode> 
+ </sso> 
+</datas>

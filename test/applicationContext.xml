@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+	<!-- DATABASE PART * -->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+		<property name="url" value="jdbc:oracle:thin:@192.168.4.17:1521:orcl" />
+		<property name="username" value="monitor3" />
+		<property name="password" value="monitor3" />
+	</bean>
+
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<constructor-arg>
+			<ref local="dataSource" />
+		</constructor-arg>
+	</bean>
+
+	<!-- 通过SOAP方式访问 结束 -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="hibernateProperties">
+			<props>
+				<!-- <prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</prop> -->
+				<prop key="hibernate.dialect">org.hibernate.dialect.OracleDialect</prop>
+				<prop key="hibernate.cache.use_minimal_puts">true</prop>
+				<prop key="hibernate.max_fetch_depth">2</prop>
+				<prop key="hibernate.default_batch_fetch_size">8</prop>
+				<prop key="hibernate.order_updates">true</prop>
+				<prop key="hibernate.show_sql">false</prop>
+				<prop key="hibernate.use_outer_join">true</prop>
+				<prop key="hibernate.jdbc.fetch_size">60</prop>
+				<prop key="hibernate.jdbc.batch_size">40</prop>
+				<prop key="hibernate.jdbc.use_streams_for_binary">true</prop>
+				<prop key="hibernate.cglib.use_reflection_optimizer">true</prop>
+				<prop key="hibernate.cache.use_second_level_cache">true</prop><!-- 开启二级缓存,默认就是开启状态 -->
+			</props>
+		</property>
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="mappingLocations">
+			<list>
+
+				<value>classpath:/com/rongji/websiteMonitor/persistence/MonitoringPoint.hbm.xml</value>
+				<value>classpath:/com/rongji/websiteMonitor/persistence/Monitortype.hbm.xml</value>
+				<value>classpath:/com/rongji/websiteMonitor/persistence/Task.hbm.xml</value>
+				<value>classpath:/com/rongji/websiteMonitor/persistence/PubScheduler.hbm.xml</value>
+				<value>classpath:/com/rongji/websiteMonitor/persistence/TaskResult.hbm.xml</value>
+
+				<value>classpath:/com/rongji/websiteMonitor/persistence/FaultHistory.hbm.xml</value>
+				<value>classpath:/com/rongji/websiteMonitor/persistence/AlarmInformHistory.hbm.xml</value>
+				<value>classpath:/com/rongji/websiteMonitor/persistence/SnmpModel.hbm.xml</value>
+				<value>classpath:/com/rongji/websiteMonitor/persistence/SnmpFaultHistory.hbm.xml</value>
+				<value>classpath:/com/rongji/websiteMonitor/persistence/Threshold.hbm.xml</value>
+				<value>classpath:/com/rongji/websiteMonitor/persistence/Project.hbm.xml</value>
+				<value>classpath:/com/rongji/websiteMonitor/persistence/Subproject.hbm.xml</value>
+			</list>
+		</property>
+	</bean>
+
+
+	<!-- 配置数据库事务管理器 transactionManager -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+
+	<!-- 配置Spring配置式事务代理（txProxyTemplate） -->
+	<!-- txProxyTemplate 是一个抽象的定义，全部业务逻辑Bean的定义将继承其定义，从而获得Spring的配置式事务能力 -->
+	<bean id="txProxyTemplate"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean"
+		abstract="true">
+		<property name="transactionManager" ref="transactionManager" />
+		<property name="transactionAttributes">
+			<props>
+				<prop key="select*">PROPAGATION_REQUIRED,readOnly</prop>
+				<prop key="find*">PROPAGATION_REQUIRED,readOnly</prop>
+				<prop key="load*">PROPAGATION_REQUIRED,readOnly</prop>
+				<prop key="save*">PROPAGATION_REQUIRED</prop>
+				<prop key="insert*">PROPAGATION_REQUIRED</prop>
+				<prop key="update*">PROPAGATION_REQUIRED</prop>
+				<prop key="remove*">PROPAGATION_REQUIRED</prop>
+				<prop key="del*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+
+
+
+
+
+	<!-- Hibernate实现数据访问接口 -->
+	<!-- 实体持久化类需在Spring的上下文配置中定义，以便业务逻辑类可以从Spring环境中获取并使用。由于实体持久化类没有存储任何状态数据，因此应使用单例模式。 -->
+	<bean id="PubCommonDAO" class="com.rongji.dfish.dao.impl.PubCommonDAOImpl">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+
+	<!-- 监测点 -->
+	<bean id="pointDao"
+		class="com.rongji.websiteMonitor.dao.impl.MonitoringPointDaoImpl">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	<!-- 业务逻辑类我们将实施Spring的配置化事务，因此其配置应扩展txProxyTemplate的配置，同时应注意业务逻辑类的方法命名应匹配txProxyTemplate定义的方法名，否则Spring无法使用AOP机制插入事务处理 -->
+	<bean id="pointService" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="com.rongji.websiteMonitor.service.impl.MointoringPointServiceImpl">
+				<property name="pointDao" ref="pointDao" />
+			</bean>
+		</property>
+	</bean>
+
+	<!-- 检测类别 -->
+	<bean id="typeDao"
+		class="com.rongji.websiteMonitor.dao.impl.MonitoringTypeDaoImpl">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	<!-- 业务逻辑类我们将实施Spring的配置化事务，因此其配置应扩展txProxyTemplate的配置，同时应注意业务逻辑类的方法命名应匹配txProxyTemplate定义的方法名，否则Spring无法使用AOP机制插入事务处理 -->
+	<bean id="typeService" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="com.rongji.websiteMonitor.service.impl.MointoringTypeServiceImpl">
+				<property name="typeDao" ref="typeDao" />
+			</bean>
+		</property>
+	</bean>
+
+
+	<!-- 检测项目 -->
+	<bean id="taskDao" class="com.rongji.websiteMonitor.dao.impl.TaskDaoImpl">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	<!-- 业务逻辑类我们将实施Spring的配置化事务，因此其配置应扩展txProxyTemplate的配置，同时应注意业务逻辑类的方法命名应匹配txProxyTemplate定义的方法名，否则Spring无法使用AOP机制插入事务处理 -->
+	<bean id="taskService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.rongji.websiteMonitor.service.impl.TaskServiceImpl">
+				<property name="taskDao" ref="taskDao" />
+			</bean>
+		</property>
+	</bean>
+
+	<!-- 检测结果 -->
+	<bean id="taskResultDao" class="com.rongji.websiteMonitor.dao.impl.TaskResultDaoImpl">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="taskResultService" parent="txProxyTemplate">
+		<property name="target">
+			<bean class="com.rongji.websiteMonitor.service.impl.TaskResultServiceImpl">
+				<property name="resultDao" ref="taskResultDao" />
+			</bean>
+		</property>
+	</bean>
+
+	<!-- 失败历史 -->
+	<bean id="faultHistoryDao" class="com.rongji.websiteMonitor.dao.impl.FaultHistoryDaoImpl">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="faultHistoryService" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="com.rongji.websiteMonitor.service.impl.FaultHistoryServiceImpl">
+				<property name="faultHistoryDao" ref="faultHistoryDao" />
+			</bean>
+		</property>
+	</bean>
+
+	<!-- 告警历史记录 -->
+	<bean id="alarmInformHistoryDao"
+		class="com.rongji.websiteMonitor.dao.impl.AlarmInformHistoryDaoImpl">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="alarmInformHistoryService" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="com.rongji.websiteMonitor.service.impl.AlarmInformHistoryServiceImpl">
+				<property name="alarmInformHistoryDao" ref="alarmInformHistoryDao" />
+			</bean>
+		</property>
+	</bean>
+
+	<!-- 邮件接口 -->
+	<bean id="mailService"
+		class="com.rongji.websiteMonitor.service.impl.message.SenderMailServiceImpl">
+		<property name="mailSender">
+			<ref local="mailSender" />
+		</property>
+	</bean>
+	<!-- 邮件发送 -->
+	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host">
+			<value>smtp.163.com</value>
+		</property>
+		<property name="javaMailProperties">
+			<props>
+				<!-- 如果要使用用户名和密码验证,这一步需要 -->
+				<prop key="mail.smtp.auth">true</prop>
+			</props>
+		</property>
+		<property name="username">
+			<!--发送邮箱账户 -->
+			<value>rongjitest@163.com</value>
+		</property>
+		<property name="password">
+			<!--发送邮箱密码 -->
+			<value>abc123</value>
+		</property>
+	</bean>
+	<bean id="snmpDao" class="com.rongji.websiteMonitor.dao.impl.SnmpDaoImpl">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="snmpService" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="com.rongji.websiteMonitor.service.impl.SnmpServiceImpl">
+				<property name="snmpDao" ref="snmpDao" />
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="snmpFaultHistoryDao" class="com.rongji.websiteMonitor.dao.impl.SnmpFaultHistoryDaoImpl">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="snmpFaultHistoryService" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="com.rongji.websiteMonitor.service.impl.SnmpFaultHistoryServiceImpl">
+				<property name="snmpFaultHistoryDao" ref="snmpFaultHistoryDao" />
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="schedulerDao" class="com.rongji.websiteMonitor.dao.impl.SchedulerDaoImpl">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="schedulerService" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="com.rongji.websiteMonitor.service.impl.SchedulerServiceImpl">
+				<property name="schedulerDao" ref="schedulerDao" />
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="thresholdDao" class="com.rongji.websiteMonitor.dao.impl.ThresholdDaoImpl">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="thresholdService" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="com.rongji.websiteMonitor.service.impl.ThresholdServiceImpl">
+				<property name="thresholdDao" ref="thresholdDao" />
+			</bean>
+		</property>
+	</bean>
+	
+		<bean id="projectDao" class="com.rongji.websiteMonitor.dao.impl.ProjectDaoImpl">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="projectService" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="com.rongji.websiteMonitor.service.impl.ProjectServiceImpl">
+				<property name="projectDao" ref="projectDao" />
+			</bean>
+		</property>
+	</bean>
+	
+		<bean id="subprojectDao" class="com.rongji.websiteMonitor.dao.impl.SubprojectDaoImpl">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="subprojectService" parent="txProxyTemplate">
+		<property name="target">
+			<bean
+				class="com.rongji.websiteMonitor.service.impl.SubprojectServiceImpl">
+				<property name="subprojectDao" ref="subprojectDao" />
+			</bean>
+		</property>
+	</bean>
+	
+	<!-- 短信接口 -->
+	<bean id="smsService"
+		class="com.rongji.websiteMonitor.service.impl.message.SendNoteMessageServiceImpl">
+	</bean>
+	<!-- 监控详情 -->
+	<bean id="detialService"
+		class="com.rongji.websiteMonitor.service.impl.MonitorDetialServiceImpl">
+	</bean>
+</beans>
